@@ -46,52 +46,50 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-  /* Custom from now on */ 
  
- 
+ /* custom CSS --> */
+
 #container {
-    width:920px;
-    margin: auto;
+    width:1200px;
+    border:2px;
+    border-color:blue;
+    margin:auto;
     text-align:justify;
-    background-color:#607FBF;
     overflow:auto;
-        }
+   
+ }
 #header {
     width:100%;
+    border:2px;
+    border-color:blue;
+    
     
 }
 #nav {
-    width:20%;
-    color:#3359A6;
-    background-color: #3359A6;
+    width:10%;
     float:left;
-    margin: 0px, 30px, 0px, 30px;
-    }
-#content{
-    width:90%;
-}
-body {
-    font-size:16px;
+    
+    margin: 30px, 0px, 0px, 0px
     
 }
 
-@font-face{
-    
+#content {
+    width:90%;
+    text-align:center;
+    float:right;
+    line-height:120%;
+   
 }
-h1,h2, h3, h4, h5,h6 {
-    font-family: 
-    font: garamond, georgia, arial; 
-    font-size: 2em;
-   }
- 
- p:first-letter { font-size: 2em; }
+#footer {
+    width: 90% }
+
  
      
  
  
  
  
- 
+
  
  
  
