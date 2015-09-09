@@ -54,7 +54,7 @@ table {
     text-align:justify;
     overflow:auto;
     font-size:14px;
-    border:1px solid black;
+    border:0px solid black;
     
    
  }
@@ -74,28 +74,56 @@ table {
     }
     
 #nav ul {
-    background-color:transparent;
-    width:125px;
-    height:125px;
-    border:2px double black;
-    border-radius:15px;
+    
+   
 
 }
 #nav ul li {
-    background-color:rgba(170,180,190,1);
+    display:list-item;
+    background:#bcd3f3;    
+    border-radius:15px;   
+    width:120px;
+    height:40px;
     border: 2px outset gray;
-    border-radius:15px;
+    
     text-align:center;
     
 }
-
+#nav ul li:hover {
+    background:#1987b0;
+}
 .active {
-    background-color:gray;
+    display: inline-block;
+    background:#6dbfdd;
+    border-radius:15px;
+    width:120px;
+    height:40px;
 }
 
-a:visited{
-    color:navy;
+.active:hover {
+    background:#1987b0;
 }
+.button {
+  padding: 10px 18px;
+  color: #fff;
+  border-radius: 3px; 
+  text-decoration: none;
+  display: inline-block;
+}
+  .button:hover {
+  	text-decoration: none;
+  }
+  
+  .button.primary {
+  background: #2eabd9;
+}
+  .button.primary:hover {
+    background: #1987b0;
+  }
+
+
+
+  
 
 #content {
     width:950px;
@@ -156,6 +184,14 @@ p {
     font-family:"garamond, helvetica";
     line-height:1em;
 }  
+
+
+a {text-decoration: none;} 
+a:link { color:green;}
+a:visited { color:#f26c4f;}
+a:focus {color:red;}
+a:hover {color:#6df6de; }
+a:active {color:gray;} /*the link styles must be in this order or the link settings will override eachother and they won't work */
  
  .paragraph {
      margin: 25px 25px 25px 25px;
@@ -171,9 +207,12 @@ p {
  /* Colors:
  Bgcolor in content:235, 232, 255
  Bgcolor in footer:235, 232, 255
- Bgcolor in navigationmanu:184, 186, 194 or #b8bac2
+ Bgcolor in navigationmanu: #bcd3f3
+
+ f26c4f
+ ec008c
  
- 
+ */
  
  
  
