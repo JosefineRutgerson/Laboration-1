@@ -55,6 +55,11 @@ table {
     text-align:justify;
     overflow:auto;
     font-size:14px;
+    background-image: url(../Css/Pics/havtest.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment:scroll;
    
  }
 #header {
@@ -77,15 +82,17 @@ table {
 
 #content {
     width:95%;
-    margin:1em;
+    margin:2em;
     text-align:justify;
     
     line-height:120%;
     border: 2px solid black;
+    background-color:rgba(235, 232, 255, 0.6)
 }
 #footer {
     width: 98%; 
     border: 2px solid black;
+    background-color:rgba(235, 232, 255, 0.5)
     
 }
 body {
