@@ -151,3 +151,39 @@ ol li  dd {
     background:url(/Css/Pics/iconblogg.png) /40px 35px no-repeat;
      background-color:rgba(188, 211, 243, 0.8);
      
+         
+}
+#nav {
+    width:110px;
+    float:left;
+    margin: 0px 25px 0px 0px;
+}
+    
+#nav ul.mainmenu {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    clear:left;
+    width:100%;
+}
+
+ul.mainmenu li  {
+    font-size:1.3em;
+    font-family:"bookman old style";
+    background:#bcd3f3;    
+    border-radius:15px;   
+    width:120px;
+    height:40px;
+    border: 2px outset gray;
+    text-align:center;
+    
+    
+}
+ul.mainmenu li:hover {
+    background:#1987b0;
+    display:block;
+}
+
+ul.mainmenu li a {
+    display:inline-block;
+}
