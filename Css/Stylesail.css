@@ -103,3 +103,51 @@ a:visited { color:#ec008c;}
 a:focus {color:red;}
 a:hover {color:#4ff1f2;}
 a:active {color:gray;} /*the link styles must be in this order or the link settings will override eachother and they won't work */
+
+    
+#nav ul .mainmenu {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    
+   
+
+}
+#nav ul .mainmenu li {
+    display:list-item;
+    background:#bcd3f3;    
+    border-radius:15px;   
+    width:120px;
+    height:40px;
+    border: 2px outset gray;
+    
+    text-align:center;
+    
+    
+ ol {
+    font-size:1.3em;
+    font-family:"bookman old style","georgia", "garamond", "helvetica";
+    line-height:1.1em;
+    list-style-type:decimal ;
+    padding:25px;
+     
+ }
+ 
+ ol li {
+    margin-left:15px;
+    list-style-type:decimal;
+    
+     
+ }
+ 
+ ol li  dt {
+     font-style:italic;
+     
+}
+
+ol li  dd {
+    margin-left:40px;
+    
+    background:url(/Css/Pics/iconblogg.png) /40px 35px no-repeat;
+     background-color:rgba(188, 211, 243, 0.8);
+     

@@ -138,7 +138,7 @@ table {
 }
 #footer {
     width: 950px;
-    background-color:rgba(235, 232, 255, 0.6);
+    background-color:rgba(235, 232, 255, 0.9);
     clear:both;
     margin-left:135px;
     border:1px solid black;
@@ -227,17 +227,35 @@ a:active {color:gray;} /*the link styles must be in this order or the link setti
      border:2px double gray;
      margin:45px 45px 45px 45px;
      padding:20px 20px 20px 20px;
-     background:url(/Css/Pics/iconblogg.png) top left / 40px 35px no-repeat;
+     background:url(/Css/Pics/iconblogg.png) top left/ 40px 35px no-repeat;
      background-color:rgba(188, 211, 243, 0.8);
-
- }
- 
+}
+     
+     
  div.blog-post h4 {
      font-size:1.2em;
      font-style:italic;
      font-weight:bold;
+     margin-top:10px;
     
  }
+
+.blog-spot p {
+    padding:10px 10px 10px 10px;
+}
+
+.pic-class {
+    float:right;
+    padding:5px;
+    margin:5px;
+}
+
+
+.video {
+    float:right;
+    padding:5px;
+    margin:5px;
+}
 
 #BP {
     position: fixed;
@@ -247,9 +265,57 @@ a:active {color:gray;} /*the link styles must be in this order or the link setti
  }
  
  
+thead {
+    border:2px solid navy;
+    table-layout:auto;
+    width:300px;
+}
+
+tbody {
+    border:2px solid navy;
 }
     
+tfoot {
+    border:2px solid navy;
+        
+    }
+
+tfoot p {
+    font-size:1em;
 }
+
+th {
+    border:2px solid navy;
+}
+
+tr {
+    border:2px solid navy;
+}
+
+td {
+    border:2px solid navy;
+}
+
+th p {
+    margin:5px;
+    padding:3px;
+    
+}
+
+td p {
+    margin:5px;
+    padding:3px;
+}
+td p em {
+    font-style:italic;
+    margin-right:15px;
+    
+}
+p.rowspan {
+    margin-top:60px;
+}
+
+
  /* Colors:
  Bgcolor in content:235, 232, 255
  Bgcolor in footer:235, 232, 255
