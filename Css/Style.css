@@ -48,7 +48,8 @@ table {
  
  /* custom CSS --> */
 
-/* Layout specifications */
+/* Layout of the pages's different blocks */
+
 #container {
     width:1200px;
     margin:auto;
@@ -62,11 +63,13 @@ table {
     width:100%;
     margin:0px 0px 0px 0px;
     z-index:-2;
+    background-image:url(Pics/J-logga.png) top left / 677 250 no-repeat;
 }
 
 #content {
     width:950px;
     margin:auto;
+    margin-bottom:20px;
     text-align:left;
     float:left;
     line-height:120%;
@@ -81,7 +84,11 @@ table {
     border:1px solid black;
 }
 
-  /* The navigation menu */
+body {
+    font-size: 14px; }/* the absolute size for the font-size */
+
+  /* The navigation menu */ /* The navigation menu was a pain to do...in the end I took away the div tag <nav> and put just <nav> */
+
 nav {
     width:110px;
     height:200px;
@@ -89,13 +96,13 @@ nav {
     margin: 0px 25px 0px 0px;
 }
 
-nav ul {
+nav ul {         
     width:100%;
     clear:left;
     
 }    
 
-nav ul li {
+nav ul li {   /* One of my problems with the menu was that I first didn't get which menu element corresponded to with  */
     font-size:1.3em;
     font-family:"bookman old style";
     background:#bcd3f3;    
@@ -113,17 +120,25 @@ nav ul li {
     border-radius:15px;
     width:120px;
     height:40px;
+    
 }
- 
+.passiv:hover  {
+    background:#1987b0;
+} 
  
 .active {
-    display: inline-block;
+    display:block;
     background:#6dbfdd;
-    border-radius:15px;
+    border-radius:14px;
     width:120px;
     height:40px;
-}
     
+}
+.active:hover {
+      background:#1987b0;
+}
+
+
     
 
  /* List layout */
@@ -137,9 +152,8 @@ nav ul li {
 .ul {
     list-style-type:circle;
     margin: 5px;
-   
-    
- }
+    margin:0px 45px 0px 45px;
+}
     
 .ul li {
     margin-left:40px;
@@ -151,15 +165,28 @@ nav ul li {
      margin-left:40px;
     font-family:"bookman old style";
     font-size:1.2em;
-    
 }    
- 
- 
-body {
-    font-size: 14px; /* the absolute size for the font-size */
+
+.dl {
+    margin: 5px;
+    margin:0px 45px 0px 45px;
+    font-family:"bookman old style", "helvetiva";
+    font-size:1.2em;
    
-    background-attachment:scroll;
+} 
+
+.dl dt {
+    font-style:italic;
+    margin-top:10px;
+    margin-bottom:10px;
 }
+
+.dl dd {
+    margin-left:30px;
+}
+ 
+ 
+
 #BP { /* BP = Backgroundpicture. */ 
     position: fixed;  /*I wanted a background picture for the whole page with it's position fixed so that it stays fixed when the content scrolls down. */ 
     z-index:-1;  /*The picture covered everything at firt so I changed the prority using z-index so now it is behind everything. */
@@ -167,7 +194,7 @@ body {
     width:100%;
 }
 
-/* Heading layout: fonts, size, margins etc */
+/* Heading and paragraph layout: fonts, size, margins etc */
 
 h1 {
     font-family:"bookman old style","georgia", "garamond", "helvetica";
@@ -216,7 +243,7 @@ figure {  /* I wanted to change the position of the pics in the page presentatio
     right:200px;
 }
 
-/* Layout links */
+/* Link layout */
 
 a {text-decoration: none;} 
 a:link { color:green;}
@@ -319,10 +346,7 @@ td p em {
     font-style:italic;
     margin-right:15px;
     
-}
-p.rowspan {
-    margin-top:60px;
-}
+
 
 
  /* Colors:

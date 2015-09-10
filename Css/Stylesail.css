@@ -204,7 +204,7 @@ ul.mainmenu li a {
     display:block;
 }
 
-#naw .active {
+#nav .active {
     display: inline-block;
     background:#6dbfdd;
     border-radius:15px;
