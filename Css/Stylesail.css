@@ -187,3 +187,31 @@ ul.mainmenu li:hover {
 ul.mainmenu li a {
     display:inline-block;
 }
+#nav .mainmenu li  {
+    font-size:1.3em;
+    font-family:"bookman old style";
+    background:#bcd3f3;    
+    border-radius:15px;   
+    width:120px;
+    height:40px;
+    border: 2px outset gray;
+    text-align:center;
+    display: block;
+}
+
+#nav mainmenu:hover {
+    background:#1987b0;
+    display:block;
+}
+
+#naw .active {
+    display: inline-block;
+    background:#6dbfdd;
+    border-radius:15px;
+    width:120px;
+    height:40px;
+    
+}
+
+#nav .active:hover {
+    background:#1987b0;

@@ -82,14 +82,20 @@ table {
 }
 
   /* The navigation menu */
-#nav {
+nav {
     width:110px;
     height:200px;
     float:left;
     margin: 0px 25px 0px 0px;
 }
+
+nav ul {
+    width:100%;
+    clear:left;
     
-.mainmenu li  {
+}    
+
+nav ul li {
     font-size:1.3em;
     font-family:"bookman old style";
     background:#bcd3f3;    
@@ -98,56 +104,55 @@ table {
     height:40px;
     border: 2px outset gray;
     text-align:center;
-    display: block;
+    margin-top:5px;
 }
-
-mainmenu:hover {
-    background:#1987b0;
-    display:block;
+ 
+.passiv {
+    display:inline-block;
+    background:#bcd3f3;
+    border-radius:15px;
+    width:120px;
+    height:40px;
 }
-
+ 
+ 
 .active {
     display: inline-block;
     background:#6dbfdd;
     border-radius:15px;
     width:120px;
     height:40px;
-    
 }
+    
+    
 
-.active:hover {
-    background:#1987b0;
-}
-.button {
-  padding: 10px 18px;
-  color: #fff;
-  border-radius: 3px; 
-  text-decoration: none;
-  display: inline-block;
-}
-  .button:hover {
-  	text-decoration: none;
-  }
-  
-  .button.primary {
-  background: #2eabd9;
-}
-  .button.primary:hover {
-    background: #1987b0;
-  }
-    
  /* List layout */
  
- ul {
+.ol {
+    list-style-type:decimal;
+    font-family:"garamond";
+    margin:0px 45px 0px 45px;
+}
+
+.ul {
     list-style-type:circle;
-    margin: 45px 45px 45px 45px;
+    margin: 5px;
+   
     
  }
     
-ul li {
+.ul li {
     margin-left:40px;
+    font-family:"bookman old style";
+    font-size:1.2em;
 }
     
+.ol li {
+     margin-left:40px;
+    font-family:"bookman old style";
+    font-size:1.2em;
+    
+}    
  
  
 body {
@@ -201,7 +206,7 @@ p {
     
 }  
 
-figure {
+figure {  /* I wanted to change the position of the pics in the page presentation*/
     border:2px ridge gray;
     padding:4px;
     width:501px;
@@ -211,6 +216,7 @@ figure {
     right:200px;
 }
 
+/* Layout links */
 
 a {text-decoration: none;} 
 a:link { color:green;}
@@ -219,18 +225,20 @@ a:focus {color:red;}
 a:hover {color:#6df6de; }
 a:active {color:gray;} /*the link styles must be in this order or the link settings will override eachother and they won't work */
  
- .paragraph {
+ .paragraph {  /* this class decides the side margins for the headings and the paragraphs  */
      margin: 50px 45px 45px 45px;
      
  }
  
- .firstheader {
+ .firstheader {  /* a class to be able to style only the first headings on every page */
      font-family:"georgia", "garamond", "helvetica";
     font-size:3em;
     font-weight:bold;
     margin: 45px 45px 60px 45px;
      
  }
+ 
+ /* layout for blogpost*/
  
  div.blog-post {
      
@@ -254,19 +262,13 @@ a:active {color:gray;} /*the link styles must be in this order or the link setti
     padding:10px 10px 10px 10px;
 }
 
-.pic-class {
+/* picture position in blog-posts */
+
+.pic-class {  /* floated an image in a blog-post by this class */
     float:right;
     padding:5px;
     margin:5px;
 }
-
-
-.video {
-    float:right;
-    padding:5px;
-    margin:5px;
-}
-
 
  
  
