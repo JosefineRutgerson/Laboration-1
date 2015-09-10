@@ -16,7 +16,7 @@
             <img id="logga1" src="../Pics/J-logga.png" alt="logga" width="677" height="250" />
         </div>
         <div id="nav">
-            <ul>
+            <ul class="mainmenu">
                 <li><a href="../index.html">Start</a></li>
                 <li><a href="Laborationer.html">Laborationer</a></li>
                 <li><a href="Presentation.html" class="active">Presentation</a></li>
@@ -24,8 +24,9 @@
             </ul>
         </div>
         <div id="content">
+            <h1 id="Förstadoc" class="firstheader">Presentation</h1>
             <div class="paragraph">
-                <h2 id="Förstadoc">Uppväxt</h2>
+                <h2>Uppväxt</h2>
                 <p>
                     Jag heter Josefine Rutgerson och kommer ifrån seglarstaden Marstrand som ligger en timme norr om Göteborg. Min familj består av pappa Göran och två äldre systrar som heter Charlotte och Tanja. Min pappa bor kvar i Marstrand, har en bakgrund inom segling
                     och driver idag aktiebolaget <a href="http://www.rutgerson.se/">Rutgerson Marin AB.</a> Min syster Charlotte bor i Göteborg med sin fästman och jobbar som Vice VD på Rutgerson Marin AB. Min syster Tanja bor i Stockholm
@@ -41,7 +42,12 @@
                     på skeppet med vattensporter (vattenskidor, segling, dykning m.m.). Kryssningsfartyget seglade först i Thailand och Malaysia för att sedan segla till Medelhavet via Suezkanalen.
                 </p>
             </div>
-            <p><img id="Gangw" src="../Pics/Gangway.jpg" alt="Josefine på gangwayn" width="500" height="375" /><img src="../Pics/Skeppethemsida.jpg" alt="Skeppet" width="500" height="375" /></p>
+
+
+            <figure><img id="Gangw" src="../Pics/Gangway.jpg" alt="Josefine på gangwayn" width="500" height="375" /></figure>
+            <figure><img src="../Pics/Skeppethemsida.jpg" alt="Skeppet" width="500" height="375" /></figure>
+
+
             <div class="paragraph">
                 <h2> Min framtid som programmerare</h2>
                 <p>
@@ -53,10 +59,10 @@
             <p><a href="Laborationer.html" class="button primary">Primär knapp</a></p>
             <!-- -->
 
-
-            <h2>Mina intressen</h2>
-
-            <ul>
+            <div class="paragraph">
+                <h2>Mina intressen</h2>
+            </div>
+            <ul class="mina-intressen">
                 <li>Dataspel
                     <ul>
                         <li><a href="http://blog.dota2.com/">Dota 2</a></li>
@@ -81,29 +87,30 @@
                 <h2>Vad jag är bra på</h2>
                 <p>Svår fråga måste jag säga, men här kommer en lista (som inte är jätteseriös) där jag har rankat vad jag är bra på i nummerordning (1 = bäst på).</p>
             </div>
-            <ol>
+            <ol class="listmaincontent">
                 <li>Retorik</li>
                 <li>Skidåkning</li>
                 <li>Photoshopa</li>
                 <li>IT</li>
                 <li>Segla</li>
             </ol>
-            <div>
+            <div class="paragraph">
                 <h2>Vad jag inte är bra på</h2>
                 <p>Också en svår fråga, men här kommer en till lista i nummerordning (1 = sämst på).</p>
             </div>
-            <ol>
+            <ol class="listmaincontent">
                 <li>Matlagning</li>
                 <li>Städning</li>
                 <li>Bollsporter</li>
                 <li>Mode</li>
                 <li>Att höra av mig till nära och kära</li>
             </ol>
-            <div>
+
+            <div class="paragraph">
                 <h2>En dt lista</h2>
                 <p>Här kommer en lista över mina favorit böcker som beskriver lite vad de handlar om</p>
             </div>
-            <dl>
+            <dl class="dlmaincontent">
                 <dt>The Magic ship</dt>
                 <dd>Handlar om levande skepp, drakar och arvstrider</dd>
                 <dt>Inda</dt>
@@ -114,10 +121,11 @@
                 <dd>Handlar om hur en grupp tjuvar ska störta sin gud</dd>
             </dl>
         </div>
-        <div id="footer">
-            Copyright Josefine Rutgerson 2015 ©
-        </div>
     </div>
+    <div id="footer">
+        Copyright Josefine Rutgerson 2015 ©
+    </div>
+
 
 </body>
 

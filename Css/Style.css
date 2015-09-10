@@ -73,23 +73,25 @@ table {
     
     }
     
-#nav ul {
+#nav  ul {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
     
    
 
 }
-#nav ul li {
+#nav ul li  {
     display:list-item;
     background:#bcd3f3;    
     border-radius:15px;   
     width:120px;
     height:40px;
     border: 2px outset gray;
-    
     text-align:center;
     
 }
-#nav ul li:hover {
+#nav .mainmenu li:hover {
     background:#1987b0;
 }
 .active {
@@ -128,17 +130,17 @@ table {
 #content {
     width:950px;
     margin:auto;
-    text-align:justify;
+    text-align:left;
     float:left;
     line-height:120%;
     border: 1px solid black;
-    background-color:rgba(235, 232, 255, 0.8);
+    background-color:rgba(235, 232, 255, 0.9);
 }
 #footer {
     width: 950px;
     background-color:rgba(235, 232, 255, 0.6);
     clear:both;
-    margin-left:130px;
+    margin-left:135px;
     border:1px solid black;
     
 }
@@ -153,37 +155,51 @@ body {
 }
 
 h1 {
-    font-family:"garamond, helvetica";
+    font-family:"georgia", "garamond", "helvetica";
     font-size:3em;
     font-weight:bold;
     margin-top:25px;
     margin-bottom:25px;
     }
 h2 {
-    font-family:"garamond, helvetica";
+    font-family:"garamond", "helvetica";
     font-size:2.5em;
     font-weight:bold;
     margin-top:25px;
     margin-bottom:25px;
 }
-h3 {font-family:"garamond, helvetica";
+h3 {font-family:"garamond", "helvetica";
     font-size:1.5em;
     font-style:italic;
     margin-top:25px;
     margin-bottom:25px;
 }
-h4 {font-family:"garamond, helvetica";
+h4 {font-family:"georgia", "garamond", "helvetica";
     font-size:1.2em;
     font-style:italic;
     margin-top:25px;
     margin-bottom:25px;
+    
 }
 
 p {
-    font-size:1.2em;
-    font-family:"garamond, helvetica";
-    line-height:1em;
+    font-size:1.3em;
+    font-family:"bookman old style","georgia", "garamond", "helvetica";
+    line-height:1.1em;
+    margin:15px 0px 15px 0px;
+    padding:0px 0px 0px 0px;
+    
 }  
+
+figure {
+    border:2px ridge gray;
+    padding:4px;
+    width:501px;
+    height:376px;
+    position:relative;
+    left:200px;
+    right:200px;
+}
 
 
 a {text-decoration: none;} 
@@ -194,14 +210,44 @@ a:hover {color:#6df6de; }
 a:active {color:gray;} /*the link styles must be in this order or the link settings will override eachother and they won't work */
  
  .paragraph {
-     margin: 25px 25px 25px 25px;
+     margin: 50px 45px 45px 45px;
+     
  }
  
+ .firstheader {
+     font-family:"georgia", "garamond", "helvetica";
+    font-size:3em;
+    font-weight:bold;
+    margin: 45px 45px 60px 45px;
+     
+ }
+ 
+ div.blog-post {
+     
+     border:2px double gray;
+     margin:45px 45px 45px 45px;
+     padding:20px 20px 20px 20px;
+     background:url(/Css/Pics/iconblogg.png) top left / 40px 35px no-repeat;
+     background-color:rgba(188, 211, 243, 0.8);
+
+ }
+ 
+ div.blog-post h4 {
+     font-size:1.2em;
+     font-style:italic;
+     font-weight:bold;
+    
+ }
+
 #BP {
     position: fixed;
     z-index:-1;
     height:100%;
     width:100%;
+ }
+ 
+ 
+}
     
 }
  /* Colors:
