@@ -65,7 +65,7 @@ table {
     width:100%;
     margin:0px 0px 0px 0px;
     z-index:-2;
-    background-image:url(Css/Pics/J-logga.png) top left / 677 250 no-repeat;
+    background-image:top left url(Css/Pics/J-logga.png) / 677 250 no-repeat;
 }
 
 #content {
@@ -92,7 +92,7 @@ body {
   /* The navigation menu */ /* The navigation menu was a pain to do...in the end I took away the div tag <nav> and put just <nav> */
 
 nav {
-    width:125px;
+    width:150px;
     height:200px;
     float:left;
     margin: 0px 30px 0px 0px;
@@ -120,11 +120,8 @@ nav ul li a {
     padding:10px;
     border:2px outset gray;
     width:100%;
-
-    
 }
  
-
 
 a:hover  { /* The hover attribute makes something happen when the mouse pointer is on the element. */ 
     background:#1987b0;  /* And in this case it gives the chosen element a different color */
@@ -133,7 +130,6 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
 } 
 
 
- 
 .active { /* This is like the passive element but is effects the "active" element in the menu*/
     display: inline-block;
     background:#6dbfdd;
@@ -146,15 +142,64 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
       background:#1987b0;
 }
 
+
+/* CSS Sprites in the menu */
+
 #starticon {
-    background-image:url(Pics/Startsprite44.png);
+    background-image:url(Pics/boktest2.png);
     background-repeat:no-repeat;
-    
-    background-position:0px -40px;
-    
+    background-position:0px 1px;
+}
+
+#starticon:hover {
+    background-position: 0px -41px;
 }
     
+#starticon:active  {
+    background-position:0px -80px;
+}
 
+#labicon {
+    background-image:url(Pics/boktest2.png);
+    background-repeat:no-repeat;
+    background-position:0px -120px;
+}
+
+#labicon:hover {
+    background-position:0px -157px;
+}
+
+#labicon:active {
+    background-position:0px -200px;
+}
+
+#presicon {
+      background-image:url(Pics/boktest2.png);
+    background-repeat:no-repeat;
+    background-position:0px -238px;
+}
+
+#presicon:hover {
+    background-position:0px -278px;
+}
+
+#presicon:active {
+    background-position:0px -318px;
+}
+
+#contacticon {
+    background-image:url(Pics/boktest2.png);
+    background-repeat:no-repeat;
+    background-position:0px -360px;
+}
+
+#contacticon:hover {
+    background-position:0px -400px;
+}
+
+#contacticon:active {
+    background-position:0px -440px;
+}
  /* List layout */
  
 .ol {
@@ -276,7 +321,7 @@ figure {  /* I wanted to change the position of the pics in the page presentatio
 a {text-decoration: none;} 
 a:link { color:green;}
 a:visited { color:#f26c4f;}
-a:focus {color:red;}
+a:focus {color:navy;}
 a:hover {color:#6df6de; }
 a:active {color:purple;} /*the link styles must be in this order or the link settings will override eachother and they won't work */
  
