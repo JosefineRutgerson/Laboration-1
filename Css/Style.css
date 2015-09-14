@@ -102,7 +102,7 @@ nav ul {
     
 }    
 
-nav ul li {   /* One of my problems with the menu was that I first didn't get which menu element corresponded to with  */
+nav ul li {   /* One of my problems with the menu was that I first didn't get which nav element corresponded to which  */
     font-size:1.3em;
     font-family:"bookman old style";
     background:#bcd3f3;    
@@ -150,7 +150,7 @@ nav ul li {   /* One of my problems with the menu was that I first didn't get wh
 }
 
 .ul {
-    list-style-type:circle;
+    list-style-type:disc;
     margin: 5px;
     margin:0px 45px 0px 45px;
 }
@@ -159,6 +159,20 @@ nav ul li {   /* One of my problems with the menu was that I first didn't get wh
     margin-left:40px;
     font-family:"bookman old style";
     font-size:1.2em;
+}
+
+.ul li ul {
+    margin-left:10px;
+    font-family:"bookman old style";
+    font-size:0.75em;
+    list-style-type:disc;
+}
+.ol li .dl {
+    margin-left:10px;
+    font-size:0.80em;
+}
+.ol li .ul {
+    font-size:0.80em;
 }
     
 .ol li {
