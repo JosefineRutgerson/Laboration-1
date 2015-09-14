@@ -215,3 +215,8 @@ ul.mainmenu li a {
 
 #nav .active:hover {
     background:#1987b0;
+    
+    
+    
+    
+    .passiv {  /* this class defines how the "passive" elements in the nav menu shall look, and it makes them into button cuz of the "inline-block" */ 

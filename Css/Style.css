@@ -90,10 +90,10 @@ body {
   /* The navigation menu */ /* The navigation menu was a pain to do...in the end I took away the div tag <nav> and put just <nav> */
 
 nav {
-    width:110px;
+    width:125px;
     height:200px;
     float:left;
-    margin: 0px 25px 0px 0px;
+    margin: 0px 30px 0px 0px;
 }
 
 nav ul {         
@@ -105,40 +105,52 @@ nav ul {
 nav ul li {   /* One of my problems with the menu was that I first didn't get which nav element corresponded to which  */
     font-size:1.3em;
     font-family:"bookman old style";
-    background:#bcd3f3;    
     border-radius:15px;   
-    width:120px;
-    height:40px;
-    border: 2px outset gray;
     text-align:center;
-    margin-top:5px;
+    margin-bottom:5px;
+    
 }
- 
-.passiv {  /* this class defines how the "passive" elements in the nav menu shall look, and it makes them into button cuz of the "inline-block" */ 
+
+nav ul li a {
     display:inline-block;
     background:#bcd3f3;
     border-radius:15px;
-    width:120px;
-    height:40px;
+    padding:10px;
+    border:2px outset gray;
+    width:100%;
+
     
 }
-.passiv:hover  { /* The hover attribute makes something happen when the mouse pointer is on the element. */ 
+ 
+
+
+a:hover  { /* The hover attribute makes something happen when the mouse pointer is on the element. */ 
     background:#1987b0;  /* And in this case it gives the chosen element a different color */
+    
+    
 } 
+
+
  
 .active { /* This is like the passive element but is effects the "active" element in the menu*/
-    display:block;
+    display: inline-block;
     background:#6dbfdd;
     border-radius:14px;
-    width:120px;
-    height:40px;
+
+    
     
 }
 .active:hover {
       background:#1987b0;
 }
 
-
+#starticon {
+    background-image:url(Pics/Startsprite44.png);
+    background-repeat:no-repeat;
+    
+    background-position:0px -40px;
+    
+}
     
 
  /* List layout */
@@ -264,7 +276,7 @@ a:link { color:green;}
 a:visited { color:#f26c4f;}
 a:focus {color:red;}
 a:hover {color:#6df6de; }
-a:active {color:gray;} /*the link styles must be in this order or the link settings will override eachother and they won't work */
+a:active {color:purple;} /*the link styles must be in this order or the link settings will override eachother and they won't work */
  
  .paragraph {  /* this class decides the side margins for the headings and the paragraphs  */
      margin: 50px 45px 45px 45px;
