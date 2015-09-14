@@ -114,7 +114,7 @@ nav ul li {   /* One of my problems with the menu was that I first didn't get wh
     margin-top:5px;
 }
  
-.passiv {
+.passiv {  /* this class defines how the "passive" elements in the nav menu shall look, and it makes them into button cuz of the "inline-block" */ 
     display:inline-block;
     background:#bcd3f3;
     border-radius:15px;
@@ -122,11 +122,11 @@ nav ul li {   /* One of my problems with the menu was that I first didn't get wh
     height:40px;
     
 }
-.passiv:hover  {
-    background:#1987b0;
+.passiv:hover  { /* The hover attribute makes something happen when the mouse pointer is on the element. */ 
+    background:#1987b0;  /* And in this case it gives the chosen element a different color */
 } 
  
-.active {
+.active { /* This is like the passive element but is effects the "active" element in the menu*/
     display:block;
     background:#6dbfdd;
     border-radius:14px;
