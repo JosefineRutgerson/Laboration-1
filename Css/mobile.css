@@ -2,15 +2,20 @@
 /* Layout for mobiles */
 
 nav {
-    width:40%;
+    width:100%;
     float:none;
     height:auto;
-    margin-left:0.5%;
+    
 }
 
-nav ul li {
-    
-    
+nav ul li a {
+    width:91%;
+    padding:4% 4% 4% 2%;
+    border-radius:0px;
+}
+
+.active {
+    border-radius:0px;
 }
 
 body {
@@ -21,11 +26,12 @@ body {
 
 #content {
     
-    width:100%;
+    width:98%;
 }
 
 #footer {
-    width:100%;
+    width:98%;
+    margin:0;
     
 }
 
@@ -59,3 +65,6 @@ div.blog-post {
     margin:5px;
 }
 
+#Jlogga {
+    width:100%;
+}

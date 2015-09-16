@@ -85,7 +85,7 @@ table {
     width: 80%;
     background-color:rgba(235, 232, 255, 0.9);
     clear:both;
-    margin-left:14.9%;
+    margin-left:13.1%;
     border:1px solid black;
 }
 
@@ -103,10 +103,9 @@ body {
   /* The navigation menu */ /* The navigation menu was a pain to do...in the end I took away the div tag <nav> and put just <nav> */
 
 nav {
-    width:130px;
-    height:200px;
+    width:13%;
     float:left;
-    margin: 0px 50px 0px 0px;
+    margin: 0% 0.2% 0% 0%;
 }
 
 nav ul {         
@@ -118,8 +117,7 @@ nav ul {
 nav ul li {   /* One of my problems with the menu was that I first didn't get which nav element corresponded to which  */
     font-size:1.3em;
     font-family:"bookman old style";
-    border-radius:15px;   
-    text-align:left;
+    text-align:center;
     margin-bottom:5px;
     
 }
@@ -127,12 +125,10 @@ nav ul li {   /* One of my problems with the menu was that I first didn't get wh
 nav ul li a {
     display:inline-block;
     background:#bcd3f3;
-    border-radius:15px;
-    padding:11px;
-    padding-left:39px;
-    padding-right:0px;
+    border-radius:7px;
+    padding:5% 1% 5% 1%;
     border:2px outset gray;
-    width:100%;
+    width:93%;
 }
  
 
@@ -146,7 +142,7 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
 .active { /* This is like the passive element but is effects the "active" element in the menu*/
     display: inline-block;
     background:#6dbfdd;
-    border-radius:14px;
+    border-radius:7px;
 
     
     
