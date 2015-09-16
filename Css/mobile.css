@@ -2,11 +2,60 @@
 /* Layout for mobiles */
 
 nav {
+    width:40%;
     float:none;
+    height:auto;
+    margin-left:0.5%;
 }
 
 nav ul li {
-    display:inline-block;
-    margin-right:4.3%;
+    
     
 }
+
+body {
+    background-image:none;
+    background-color:#607FBF;
+}
+
+
+#content {
+    
+    width:100%;
+}
+
+#footer {
+    width:100%;
+    
+}
+
+.paragraph {
+     margin: 5% 4.5% 5% 4.5%;
+}
+
+.firstheader {
+    margin:1% 1% 1% 1%;
+    font-size:120%;
+    padding:2%;
+}
+
+div.blog-post {
+    margin:2% 2% 2% 2%;
+    padding:3% 3% 3% 3%;
+}
+
+
+.pic-class {
+    width:60%;
+    height:50%;
+    
+}
+
+#vektormoln {
+    width:60%;
+    height:50%;
+    float:right;
+    padding:5px;
+    margin:5px;
+}
+

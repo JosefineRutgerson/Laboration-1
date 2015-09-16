@@ -6,62 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Startsida</title>
     <link rel="stylesheet" type="text/css" href="Css/Style.css" />
-    <link rel="stykesheet" type="text/css" href="Css/screen.css" media="screen and (max-width:481px)" />
+    <link rel="stylesheet" type="text/css" href="Css/mobile.css" media="screen and (max-width:481px)" />
     <link rel="shortcut icon" href="Css/Pics/j-icon.png" type="image/png" />
 </head>
 
 <body>
-    <img id="BP" src="Css/Pics/havtest.jpg" />
     <div id="container">
         <div id="header">
-            <img id="logga1" src="Css/Pics/J-logga.png" alt="logga" width="620" height="250" />
+            <img src="Css/Pics/J-logga.png" id="Jlogga"  />
         </div>
         <nav>
             <ul>
                 <li><a href="index.html" class="active" id="starticon">Start</a></li>
                 <li><a href="Pages/Laborationer.html" id="labicon">Laborationer</a></li>
                 <li><a href="Pages/Presentation.html" id="presicon">Presentation</a></li>
-                <li><a href="Pages/Kontakt.html"id="contacticon">Kontakt</a></li>
+                <li><a href="Pages/Kontakt.html" id="contacticon">Kontakt</a></li>
             </ul>
         </nav>
         <div id="content">
-            <h1 id="startsidan" class="firstheader">Josefine Rutgerson's site! - Kursblogg</h2>
+            <h2 id="startsidan" class="firstheader">Josefine Rutgerson's site! - Kursblogg</h2>
             <div class="paragraph">
-            <h4>Blogg inlägg:</h4>
+                <h4>Blogg inlägg:</h4>
             </div>
             <div class="blog-post">
-                    <h4>En första kommentar</h4>
-                    <p> Här på min "blogg" kommer jag att ge kommentarer på de laborationer jag gör under min kurs i Webbutveckling och senare kurser. Kommer även publicera en del material, häftigt! </p>
-                    <p> Skrivet av Josefine Rutgerson, 31-08-2015</p>
+                <h4>En första kommentar</h4>
+                <p> Här på min "blogg" kommer jag att ge kommentarer på de laborationer jag gör under min kurs i Webbutveckling och senare kurser. Kommer även publicera en del material, häftigt! </p>
+                <p> Skrivet av Josefine Rutgerson, 31-08-2015</p>
             </div>
-            <div class="blog-post">
+            <div class="blog-post clearfix">
                 <h4 id="vektorbild">En vektor bild</h4>
-                <p>Har gjort en vektor bild. Hade velat göra något mer avancerat men sidan stannade upp hela tiden så jag fick nöja mig med resultatet. Google svg verktyget var väl inte det bästa grafiska verktyget jag använt men man behöver kanske bara vänja sig
-                vid det...
+                <img src="Pics/Vektorbild.svg" id="vektormoln" alt="en vektor bild på stjärnor" />
+                <p>Har gjort en vektor bild. Hade velat göra något mer avancerat men sidan stannade upp hela tiden så jag fick nöja mig med resultatet. Google svg verktyget var väl inte det bästa grafiska verktyget jag använt men man behöver kanske bara
+                    vänja sig vid det...
                 </p>
-                <img src="Pics/Vektorbild.svg" alt="en vektor bild på stjärnor" />
                 <p>Skrivet av Josefine 02-09-2015</p>
             </div>
-            <div class="blog-post">
-                <h4 id="video">Video</h4>
-                <p>Har länkat in en video till min hemsida. Fanns inte MP4 filer på sidan med videos så jag laddade bara ner en ogg-fil. </p>
-                <video width="640" height="340" controls poster="Pics/bunny.png">
-                <source class="video" src="Videos/Bunny.ogg" type="video/ogg" />
-                <p> Your browser don't support the video tag </p>
+            <div class="blog-post clearfix">
+                <h4 id="videoheader">Video</h4>
+                <video class="vid" controls poster="Pics/bunny.png">
+                    <source src="Videos/Bunny.ogg" type="video/ogg" />
+                    <p> Your browser don't support the video tag </p>
                 </video>
+                <p>Har länkat in en video till min hemsida. Fanns inte MP4 filer på sidan med videos så jag laddade bara ner en ogg-fil. </p>
                 <p><a href="https://peach.blender.org/">(c) copyright 2008, Blender Foundation</a></p>
                 <p>Skrivet av Josefine 02-09-2015</p>
             </div>
             <div class="blog-post">
                 <h4>Bilders position i textstycken på webben</h4>
-                <img class="pic-class" src="Css/Pics/flower.jpg" width="500" height="449"/>
+                <img class="pic-class" src="Css/Pics/flower.jpg" />
                 <p>Finns inte så mycket att säga om bilden förutom det att det är en bild på en av de hortensior som finns i trädgården hemma på Marstrand. Så för att få lite mer brödtext fortsätter jag med lite Lorem ipsum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat mauris nec lectus dapibus, et placerat justo lobortis. Fusce in mauris eget diam maximus aliquam. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas in suscipit mi, sit amet sodales mauris. Donec tempus et mi a aliquam. Maecenas ac dui eu libero eleifend finibus vel 
-                sed justo. Morbi commodo non risus non blandit. Nam dignissim consectetur enim, congue gravida quam luctus sit amet. Donec id lectus felis. Suspendisse tincidunt ultricies enim, in faucibus ex viverra id. Duis 
-                nec vulputate arcu, non eleifend sem. Cras quis accumsan lectus.</p>
-                <p>Etiam posuere pharetra bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut volutpat nulla odio, sit amet semper massa mollis fringilla. Nulla a maximus augue. Phasellus volutpat quam nulla.
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. In auctor eu massa ultricies mollis. Nam finibus est sit amet placerat tempus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat mauris nec lectus dapibus, et placerat justo lobortis. Fusce in mauris eget diam maximus aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac turpis egestas. Maecenas in suscipit mi, sit amet sodales mauris. Donec tempus et mi a aliquam. Maecenas ac dui eu libero eleifend finibus vel sed justo. Morbi commodo non risus non blandit. Nam dignissim consectetur enim,
+                    congue gravida quam luctus sit amet. Donec id lectus felis. Suspendisse tincidunt ultricies enim, in faucibus ex viverra id. Duis nec vulputate arcu, non eleifend sem. Cras quis accumsan lectus.</p>
+                <p>Etiam posuere pharetra bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut volutpat nulla odio, sit amet semper massa mollis fringilla. Nulla a maximus augue. Phasellus volutpat quam nulla. Interdum et malesuada
+                    fames ac ante ipsum primis in faucibus. In auctor eu massa ultricies mollis. Nam finibus est sit amet placerat tempus.</p>
                 <p>Skrivet av Josefine Rutgerson 10-09-2015</p>
             </div>
         </div>
