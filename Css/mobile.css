@@ -1,0 +1,12 @@
+
+/* Layout for mobiles */
+
+nav {
+    float:none;
+}
+
+nav ul li {
+    display:inline-block;
+    margin-right:4.3%;
+    
+}

@@ -65,7 +65,9 @@ table {
     width:100%;
     margin:0px 0px 0px 0px;
     z-index:-2;
-    background-image:top left url(Css/Pics/J-logga.png) / 677 250 no-repeat;
+    background-image:url(Css/Pics/J-logga.png);
+    background-position:top left;
+    repeat:no-repeat
 }
 
 #content {
