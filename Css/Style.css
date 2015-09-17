@@ -271,11 +271,10 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
 /* Heading and paragraph layout: fonts, size, margins etc */
 
 h1 {
-    font-family:"bookman old style","georgia", "garamond", "helvetica";
+    font-family:"bookman old style","georgia", "garamond";
     font-size:3em;
     font-weight:bold;
-    margin-top:25px;
-    margin-bottom:25px;
+    margin: 45px 45px 60px 45px;
     }
 h2 {
     font-family:"bookman old style","garamond", "helvetica";
@@ -328,16 +327,11 @@ a:active {color:purple;} /*the link styles must be in this order or the link set
  
 .paragraph {  /* this class decides the side margins for the headings and the paragraphs  */
      margin: 50px 45px 45px 45px;
+}
      
- }
  
-.firstheader {  /* a class to be able to style only the first headings on every page */
-     font-family:"georgia", "garamond", "helvetica";
-    font-size:3em;
-    font-weight:bold;
-    margin: 45px 45px 60px 45px;
      
- }
+  
  
  /* layout for blogpost*/
  

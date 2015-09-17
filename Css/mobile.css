@@ -39,11 +39,6 @@ body {
      margin: 5% 4.5% 5% 4.5%;
 }
 
-.firstheader {
-    margin:1% 1% 1% 1%;
-    font-size:120%;
-    padding:2%;
-}
 
 div.blog-post {
     margin:2% 2% 2% 2%;
@@ -67,4 +62,18 @@ div.blog-post {
 
 #Jlogga {
     width:100%;
+}
+
+
+h1 {
+    margin:1% 1% 1% 1%;
+    font-size:140%;
+    padding:2%;
+    
+}
+
+h2 {
+    font-size:120%;
+    font-style:italic;
+    font-weight:bold;
 }
