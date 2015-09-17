@@ -82,11 +82,14 @@ table {
     background-color:rgba(235, 232, 255, 0.9);
 }
 #footer {
-    width: 80%;
+    width: 78%;
     background-color:rgba(235, 232, 255, 0.9);
     clear:both;
     margin-left:13.1%;
     border:1px solid black;
+    padding:1%;
+    font-size:100%;
+    font-family:"georgia";
 }
 
 body {
@@ -227,6 +230,7 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
     margin-left:40px;
     font-family:"bookman old style";
     font-size:1.2em;
+    padding:0.2%;
 }
 
 .ul li ul {
@@ -405,6 +409,11 @@ div.clearfix {
     margin:5% 23% 0% 23%;
 }
  
+ #mob {
+     width:20%;
+     float:right;
+     margin:0% 1%;
+ }
  
  /* Table'*/
  
