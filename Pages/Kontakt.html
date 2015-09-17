@@ -8,6 +8,13 @@
     <link rel="stylesheet" type="text/css" href="../Css/Style.css" />
     <link rel="stylesheet" type="text/css" href="../Css/mobile.css" media="screen and (max-width:481px)" />
     <link rel="shortcut icon" href="../Css/Pics/j-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -29,40 +36,73 @@
             <form id="contact-form" action="http://webproduction.standout.se/form.php" method="POST">
                 <!-- Formulärkontroller här -->
                 <fieldset>
-                    <legend>Question</legend>
-                    <p>
-                        <label for="errand">Ärendetyp</label>
-                        <select name="errand" form="contact-form" id="errand">
-                            <option value="question">Question</option>
-                            <option value="comment">Comment</option>
-                            <option value="request">Request</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="rubrik">Rubrik:</label>
-                        <input type="text" name="title" id="rubrik" value="Mendokse" />
-                    </p>
-                    <label for="question">Question</label>
-                    <textarea name="question" form="contact-form" id="question">Doshte?</textarea>
+                    <div class="contact_form">
+                        <legend>
+                            <h3>Information about you</h3></legend>
+                        <p>
+                            <label for="errand">Ärendetyp</label>
+                            <select name="errand" form="contact-form" id="errand">
+                                <option value="question">Question</option>
+                                <option value="comment">Comment</option>
+                                <option value="request">Request</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="rubrik">Rubrik:</label>
+                            <input type="text" name="title" id="rubrik" value="Mendokse" />
+                        </p>
+                        <p>
+                        <label for="question">Question</label>
+                        <textarea name="question" form="contact-form" id="question">Doshte?</textarea>
+                        </p>
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Information about you</legend>
-                    <label for="firstname">Firstname</label>
-                    <input type="text" placeholder="Josefine" id="firstname" name="firstname" value="Josefine" />
-                    <p></p>
-                    <label for="mail">Contact me by mail</label>
-                    <input type="checkbox" name="contact[]" id="mail" value="Mail" />
-                    <p></p>
-                    <label for="telephone">Contact me by telephone</label>
-                    <input type="checkbox" name="contact[]" id="telephone" value="telephone" />
-
+                    <div class="contact_form">
+                        <legend>
+                            <h3>Whats's your name?</h3></legend>
+                        <p>
+                            <label for="firstname">Firstname</label>
+                            <input type="text" placeholder="Firstname" id="firstname" name="firstname" value="" required />
+                        </p>
+                        <p>
+                            <label for="mail">Contact me by mail</label>
+                            <input type="checkbox" name="contact[]" id="mail" value="Mail" />
+                        </p>
+                        <p>
+                            <label for="telephone">Contact me by telephone</label>
+                            <input type="checkbox" name="contact[]" id="telephone" value="telephone" />
+                        </p>
+                        <p>Write your E-mail or telephone number</p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="text" name="Email" placeholder="Email" required>
+                            <span>Proper format "name@something.com"</span>
+                        </p>
+                        <p>
+                            <label for="telephone">Telephone</label>
+                            <input type="tel" name="telephone" placeholder="Telephone" pattern="[0-9]{10}" required>
+                            <span></span>
+                        </p>
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Which anime series do you prefer?</legend>
-                    <input type="radio" name="group1" value="Attack on titan">Attack on titan
-                    <input type="radio" name="group1" value="Hunter x Hunter" checked>Hunter x Hunter
-                    <input type="radio" name="group1" value="Kill la kill">Kill la kill
-                    <input type="radio" name="group1" value="Fairytale">Fairytale
+                    <div class="contact_form">
+                        <legend>
+                            <h3>Which anime series do you prefer?</h3></legend>
+                        <p>
+                            <input type="radio" name="group1" value="Attack on titan">Attack on titan
+                        </p>
+                        <p>
+                            <input type="radio" name="group1" value="Hunter x Hunter" checked>Hunter x Hunter
+                        </p>
+                        <p>
+                            <input type="radio" name="group1" value="Kill la kill">Kill la kill
+                        </p>
+                        <p>
+                            <input type="radio" name="group1" value="Fairytale">Fairytale
+                        </p>
+                    </div>
                 </fieldset>
                 <button type="submit">Submit!</button>
             </form>

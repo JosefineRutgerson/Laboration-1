@@ -116,7 +116,7 @@ nav ul {
 
 nav ul li {   /* One of my problems with the menu was that I first didn't get which nav element corresponded to which  */
     font-size:1.3em;
-    font-family:"bookman old style";
+    font-family:"bookman old style","garamond";
     text-align:center;
     margin-bottom:5px;
     
@@ -213,7 +213,7 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
  
 .ol {
     list-style-type:decimal;
-    font-family:"garamond";
+    font-family:"bookman old style","garamond";
     margin:0px 45px 0px 45px;
 }
 
@@ -261,7 +261,7 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
 .dl {
     margin: 5px;
     margin:0px 45px 0px 45px;
-    font-family:"bookman old style", "helvetiva";
+    font-family:"bookman old style", "helvetica";
     font-size:1.2em;
    
 } 
@@ -282,25 +282,25 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
 /* Heading and paragraph layout: fonts, size, margins etc */
 
 h1 {
-    font-family:"bookman old style","georgia", "garamond";
+    font-family:"bookman old style","georgia", "helvetica";
     font-size:3em;
     font-weight:bold;
     margin: 45px 45px 60px 45px;
     }
 h2 {
-    font-family:"bookman old style","garamond", "helvetica";
+    font-family:"bookman old style","georgia", "helvetica";
     font-size:2.5em;
     font-weight:none;
     margin-top:25px;
     margin-bottom:25px;
 }
-h3 {font-family:"bookman old style","garamond", "helvetica";
+h3 {font-family:"bookman old style","georgia", "helvetica";
     font-size:1.5em;
     font-style:italic;
     margin-top:25px;
     margin-bottom:25px;
 }
-h4 {font-family:"bookman old style","georgia", "garamond", "helvetica";
+h4 {font-family:"bookman old style","georgia", "helvetica";
     font-size:1.2em;
     font-style:italic;
     margin-top:25px;
@@ -310,22 +310,13 @@ h4 {font-family:"bookman old style","georgia", "garamond", "helvetica";
 
 p {
     font-size:1.3em;
-    font-family:"bookman old style","georgia", "garamond", "helvetica";
+    font-family:"bookman old style","georgia", "helvetica";
     line-height:1.1em;
     margin:15px 0px 15px 0px;
     padding:0px 0px 0px 0px;
     
 }  
 
-figure {  /* I wanted to change the position of the pics in the page presentation*/
-    border:2px ridge gray;
-    padding:4px;
-    width:501px;
-    height:376px;
-    position:relative;
-    left:200px;
-    right:200px;
-}
 
 /* Link layout */
 
@@ -395,6 +386,25 @@ div.clearfix {
     
 }
  
+ /* Pictures */
+ 
+ #Skeppet {
+    width:50%;
+    border:2px ridge gray;
+    padding:4px;
+    position:relative;
+    margin:3% 23% 5% 23%;
+}
+ 
+ 
+ #Gangw {
+    width:50%;
+    border:2px ridge gray;
+    padding:4px;
+    position:relative;
+    margin:5% 23% 0% 23%;
+}
+ 
  
  /* Table'*/
  
@@ -442,7 +452,16 @@ td p {
 td p em {
     font-style:italic;
     margin-right:15px;
+}
     
+    
+    #contact-form {
+    margin:2%;
+}
+    
+    .contact_form label {
+    float:left;
+}
 
 
 
