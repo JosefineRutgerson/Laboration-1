@@ -235,10 +235,19 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
     font-size:0.75em;
     list-style-type:disc;
 }
-.ol li .dl {
-    margin-left:10px;
-    font-size:0.80em;
+
+.ol li dl dt {
+    font-style:italic;
+    margin:1%;
+    
 }
+
+.ol li dl dd {
+    font-size:90%;
+    margin-left:4%;
+}
+
+
 .ol li .ul {
     font-size:0.80em;
 }
@@ -264,7 +273,9 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
 }
 
 .dl dd {
-    margin-left:30px;
+    margin:1% 3%;
+    font-size:100%;
+    margin:1%;
 }
  
  
