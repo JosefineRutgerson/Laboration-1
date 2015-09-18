@@ -8,6 +8,11 @@ nav {
     
 }
 
+nav ul li {
+    font-family:"bookman old style","times new roman", "helvetica";
+    
+}
+
 nav ul li a {
     width:91%;
     padding:4% 4% 4% 2%;
@@ -93,7 +98,7 @@ h3 {
 
 .ol {
     list-style-type:decimal;
-    font-family:"bookman old style", "helvetica";
+    font-family:"bookman old style","times new roman", "helvetica";
     margin:5% 6% 5% 7%;
 }
 
@@ -105,13 +110,13 @@ h3 {
     
 .ul li {
     margin-left:5%;
-    font-family:"bookman old style", "helvetica";
+    font-family:"bookman old style", "times new roman", "helvetica";
     font-size:1.2em;
 }
 
 .ul li ul {
     margin-left:10px;
-    font-family:"bookman old style", "helvetica";
+    font-family:"bookman old style", "times new roman", "helvetica";
     font-size:0.75em;
     list-style-type:disc;
 }
