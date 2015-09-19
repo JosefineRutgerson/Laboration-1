@@ -82,10 +82,10 @@ table {
     background-color:rgba(235, 232, 255, 0.9);
 }
 #footer {
-    width: 78%;
+    width: 80%;
     background-color:rgba(235, 232, 255, 0.9);
     clear:both;
-    margin-left:13.1%;
+    margin-left:9.1%;
     border:1px solid black;
     padding:1%;
     font-size:100%;
@@ -106,7 +106,7 @@ body {
   /* The navigation menu */ /* The navigation menu was a pain to do...in the end I took away the div tag <nav> and put just <nav> */
 
 nav {
-    width:13%;
+    width:16%;
     float:left;
     margin: 0% 0.2% 0% 0%;
 }
