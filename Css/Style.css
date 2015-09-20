@@ -66,8 +66,10 @@ table {
     
 }
 
-#Jlogga {
-    width:60%;
+.logo {
+    width:35%;
+    padding-top:2%;
+    padding-bottom:12%;
     
 }
 
