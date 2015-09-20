@@ -74,7 +74,7 @@ table {
 }
 
 #content {
-    width:80%;
+    width:72%;
     margin:auto;
     margin-bottom:20px;
     text-align:left;
@@ -84,7 +84,7 @@ table {
     background-color:rgba(235, 232, 255, 0.9);
 }
 #footer {
-    width: 78%;
+    width: 70%;
     background-color:rgba(235, 232, 255, 0.9);
     clear:both;
     margin-left:16.2%;
