@@ -131,7 +131,7 @@ nav ul li a {
     display:inline-block;
     background:#bcd3f3;
     border-radius:7px;
-    padding:5% 1% 5% 1%;
+    padding:4% 1% 4% 1%;
     border:2px outset gray;
     width:93%;
 }
@@ -292,6 +292,7 @@ h1 {
     font-size:3em;
     font-weight:bold;
     margin: 45px 45px 60px 45px;
+    color:#1b1464;
     }
 h2 {
     font-family:"bookman old style","georgia", "helvetica";
@@ -299,18 +300,21 @@ h2 {
     font-weight:none;
     margin-top:25px;
     margin-bottom:25px;
+    color:#1b1464;
 }
 h3 {font-family:"bookman old style","georgia", "helvetica";
     font-size:1.5em;
     font-style:italic;
     margin-top:25px;
     margin-bottom:25px;
+    color:#1b1464;
 }
 h4 {font-family:"bookman old style","georgia", "helvetica";
     font-size:1.2em;
     font-style:italic;
     margin-top:25px;
     margin-bottom:25px;
+    color:#1b1464;
     
 }
 
@@ -320,6 +324,7 @@ p {
     line-height:1.1em;
     margin:15px 0px 15px 0px;
     padding:0px 0px 0px 0px;
+    color:#1b1464;
     
 }  
 
