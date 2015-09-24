@@ -63,13 +63,16 @@ table {
 
 #header {
     width:100%;
+    background-image:url(Pics/sail.png);
+    background-size:10%;
+    background:no-repeat;
     
 }
 
 .logo {
     width:35%;
     padding-top:2%;
-    padding-bottom:12%;
+    padding-bottom:3%;
     
 }
 
@@ -288,28 +291,28 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
 /* Heading and paragraph layout: fonts, size, margins etc */
 
 h1 {
-    font-family:"bookman old style", "helvetica";
+    font-family:"bookman old style", "georgia";
     font-size:3em;
     font-weight:bold;
     margin: 45px 45px 60px 45px;
     color:#1b1464;
     }
 h2 {
-    font-family:"bookman old style","georgia", "helvetica";
+    font-family:"bookman old style","georgia";
     font-size:2.5em;
     font-weight:none;
     margin-top:25px;
     margin-bottom:25px;
     color:#1b1464;
 }
-h3 {font-family:"bookman old style","georgia", "helvetica";
+h3 {font-family:"bookman old style","georgia";
     font-size:1.5em;
     font-style:italic;
     margin-top:25px;
     margin-bottom:25px;
     color:#1b1464;
 }
-h4 {font-family:"bookman old style","georgia", "helvetica";
+h4 {font-family:"bookman old style","georgia";
     font-size:1.2em;
     font-style:italic;
     margin-top:25px;
@@ -320,7 +323,7 @@ h4 {font-family:"bookman old style","georgia", "helvetica";
 
 p {
     font-size:1.3em;
-    font-family:"bookman old style","georgia", "helvetica";
+    font-family:"bookman old style","georgia";
     line-height:1.1em;
     margin:15px 0px 15px 0px;
     padding:0px 0px 0px 0px;
@@ -353,7 +356,7 @@ a:active {color:purple;} /*the link styles must be in this order or the link set
      border:2px double gray;
      margin:45px 45px 45px 45px;
      padding:20px 20px 20px 20px;
-     background:url(/Css/Pics/iconblogg.png) top left/ 40px 35px no-repeat;
+     background:url(/Css/Pics/iconblogg.png) top right/ 8% no-repeat;
      background-color:rgba(188, 211, 243, 0.8);
 }
      
