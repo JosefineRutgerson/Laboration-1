@@ -21,101 +21,102 @@
     <div id="container">
         <div id="header">
             <img src="Css/Pics/saillogo1.png" class="logo" />
+            <div></div><img src="Css/Pics/sail.png" id="sailboat" /></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active" id="starticon">Start</a></li>
+            <li><a href="Pages/Laborationer.html" id="labicon">Laborationer</a></li>
+            <li><a href="Pages/Presentation.html" id="presicon">Presentation</a></li>
+            <li><a href="Pages/Kontakt.html" id="contacticon">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <h1 id="startsidan">Josefine Rutgerson's site!</h1>
+        <div class="paragraph">
+            <h2>Kursblogg</h2>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active" id="starticon">Start</a></li>
-                <li><a href="Pages/Laborationer.html" id="labicon">Laborationer</a></li>
-                <li><a href="Pages/Presentation.html" id="presicon">Presentation</a></li>
-                <li><a href="Pages/Kontakt.html" id="contacticon">Kontakt</a></li>
+        <div class="blog-post">
+            <h4>En första kommentar</h4>
+            <p> Här på min "blogg" kommer jag att ge kommentarer på de laborationer jag gör under min kurs i Webbutveckling och senare kurser. Kommer även publicera en del material, häftigt! </p>
+            <p> Skrivet av Josefine Rutgerson, 31-08-2015</p>
+        </div>
+        <div class="blog-post clearfix">
+            <h4 id="vektorbild">En vektor bild</h4>
+            <img src="Pics/Vektorbild.svg" id="vektormoln" alt="en vektor bild på stjärnor" />
+            <p>Har gjort en vektor bild. Hade velat göra något mer avancerat men sidan stannade upp hela tiden så jag fick nöja mig med resultatet. Google svg verktyget var väl inte det bästa grafiska verktyget jag använt men man behöver kanske bara vänja
+                sig vid det...
+            </p>
+            <p>Skrivet av Josefine 02-09-2015</p>
+        </div>
+        <div class="blog-post clearfix">
+            <h4 id="videoheader">Video</h4>
+            <video class="vid" controls poster="Pics/bunny.png">
+                <source src="Videos/Bunny.ogg" type="video/ogg" />
+                <p> Your browser don't support the video tag </p>
+            </video>
+            <p>Har länkat in en video till min hemsida. Fanns inte MP4 filer på sidan med videos så jag laddade bara ner en ogg-fil. </p>
+            <p><a href="https://peach.blender.org/">(c) copyright 2008, Blender Foundation</a></p>
+            <p>Skrivet av Josefine 02-09-2015</p>
+        </div>
+        <div class="blog-post clearfix">
+            <h4>Bilders position i textstycken på webben</h4>
+            <img class="pic-class" src="Css/Pics/flower.jpg" />
+            <p>Finns inte så mycket att säga om bilden förutom det att det är en bild på en av de hortensior som finns i trädgården hemma på Marstrand. Så för att få lite mer brödtext fortsätter jag med lite Lorem ipsum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat mauris nec lectus dapibus, et placerat justo lobortis. Fusce in mauris eget diam maximus aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                ac turpis egestas. Maecenas in suscipit mi, sit amet sodales mauris. Donec tempus et mi a aliquam. Maecenas ac dui eu libero eleifend finibus vel sed justo. Morbi commodo non risus non blandit. Nam dignissim consectetur enim, congue gravida
+                quam luctus sit amet. Donec id lectus felis. Suspendisse tincidunt ultricies enim, in faucibus ex viverra id. Duis nec vulputate arcu, non eleifend sem. Cras quis accumsan lectus.</p>
+            <p>Etiam posuere pharetra bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut volutpat nulla odio, sit amet semper massa mollis fringilla. Nulla a maximus augue. Phasellus volutpat quam nulla. Interdum et malesuada fames
+                ac ante ipsum primis in faucibus. In auctor eu massa ultricies mollis. Nam finibus est sit amet placerat tempus.</p>
+            <p>Skrivet av Josefine Rutgerson 10-09-2015</p>
+        </div>
+        <div class="blog-post">
+            <h4>Mobile-First Responsive Web Design</h4>
+            <img src="Css/Pics/Sidlayoutmobil.png" id="mob" alt="En bild på min hemsida i mobil version" />
+            <p>Nu har jag skapat ett nytt stylesheet för mobiler. Jag har gjort mycket och stött på ganska många problem men generellt så har jag främst fått ändra marginaler för att maximera uttrymet för innehållet. </p>
+            <p>Här är en lista på de främsta saker jag har ändrat på.</p>
+            <ul class="ul">
+                <li>Navigations meny</li>
+                <li>Backgrungsbilden blev utbytt med en färg</li>
+                <li>Logga</li>
+                <li>Bilder och video</li>
+                <li>Marginaler och textstorlekar</li>
+                <li>Tabellen</li>
+                <li>Kontaktformuläret</li>
+                <li>CSS sprites</li>
+                <li>Favicon och apple-touch icon</li>
             </ul>
-        </nav>
-        <div id="content">
-            <h1 id="startsidan">Josefine Rutgerson's site!</h1>
-            <div class="paragraph">
-                <h2>Kursblogg</h2>
-            </div>
-            <div class="blog-post">
-                <h4>En första kommentar</h4>
-                <p> Här på min "blogg" kommer jag att ge kommentarer på de laborationer jag gör under min kurs i Webbutveckling och senare kurser. Kommer även publicera en del material, häftigt! </p>
-                <p> Skrivet av Josefine Rutgerson, 31-08-2015</p>
-            </div>
-            <div class="blog-post clearfix">
-                <h4 id="vektorbild">En vektor bild</h4>
-                <img src="Pics/Vektorbild.svg" id="vektormoln" alt="en vektor bild på stjärnor" />
-                <p>Har gjort en vektor bild. Hade velat göra något mer avancerat men sidan stannade upp hela tiden så jag fick nöja mig med resultatet. Google svg verktyget var väl inte det bästa grafiska verktyget jag använt men man behöver kanske bara
-                    vänja sig vid det...
-                </p>
-                <p>Skrivet av Josefine 02-09-2015</p>
-            </div>
-            <div class="blog-post clearfix">
-                <h4 id="videoheader">Video</h4>
-                <video class="vid" controls poster="Pics/bunny.png">
-                    <source src="Videos/Bunny.ogg" type="video/ogg" />
-                    <p> Your browser don't support the video tag </p>
-                </video>
-                <p>Har länkat in en video till min hemsida. Fanns inte MP4 filer på sidan med videos så jag laddade bara ner en ogg-fil. </p>
-                <p><a href="https://peach.blender.org/">(c) copyright 2008, Blender Foundation</a></p>
-                <p>Skrivet av Josefine 02-09-2015</p>
-            </div>
-            <div class="blog-post clearfix">
-                <h4>Bilders position i textstycken på webben</h4>
-                <img class="pic-class" src="Css/Pics/flower.jpg" />
-                <p>Finns inte så mycket att säga om bilden förutom det att det är en bild på en av de hortensior som finns i trädgården hemma på Marstrand. Så för att få lite mer brödtext fortsätter jag med lite Lorem ipsum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat mauris nec lectus dapibus, et placerat justo lobortis. Fusce in mauris eget diam maximus aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                    fames ac turpis egestas. Maecenas in suscipit mi, sit amet sodales mauris. Donec tempus et mi a aliquam. Maecenas ac dui eu libero eleifend finibus vel sed justo. Morbi commodo non risus non blandit. Nam dignissim consectetur enim,
-                    congue gravida quam luctus sit amet. Donec id lectus felis. Suspendisse tincidunt ultricies enim, in faucibus ex viverra id. Duis nec vulputate arcu, non eleifend sem. Cras quis accumsan lectus.</p>
-                <p>Etiam posuere pharetra bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut volutpat nulla odio, sit amet semper massa mollis fringilla. Nulla a maximus augue. Phasellus volutpat quam nulla. Interdum et malesuada
-                    fames ac ante ipsum primis in faucibus. In auctor eu massa ultricies mollis. Nam finibus est sit amet placerat tempus.</p>
-                <p>Skrivet av Josefine Rutgerson 10-09-2015</p>
-            </div>
-            <div class="blog-post">
-                <h4>Mobile-First Responsive Web Design</h4>
-                <img src="Css/Pics/Sidlayoutmobil.png" id="mob" alt="En bild på min hemsida i mobil version" />
-                <p>Nu har jag skapat ett nytt stylesheet för mobiler. Jag har gjort mycket och stött på ganska många problem men generellt så har jag främst fått ändra marginaler för att maximera uttrymet för innehållet. </p>
-                <p>Här är en lista på de främsta saker jag har ändrat på.</p>
-                <ul class="ul">
-                    <li>Navigations meny</li>
-                    <li>Backgrungsbilden blev utbytt med en färg</li>
-                    <li>Logga</li>
-                    <li>Bilder och video</li>
-                    <li>Marginaler och textstorlekar</li>
-                    <li>Tabellen</li>
-                    <li>Kontaktformuläret</li>
-                    <li>CSS sprites</li>
-                    <li>Favicon och apple-touch icon</li>
-                </ul>
-                <p>Inna jag beskriver vad jag har gjort så vill jag nämna att jag har utformat innehållet för främst Iphone fyra. Det funkar bra i andra mobilskärmar men kanske inte lika perfekt. Det är svårt att ha storlekar och procentsatser för att det
-                    ska vara perfekt i alla olika skärmar så jag är ändå nöjd med resultatet. Det jag skulle kunna göra är att göra en till CSS layout för just surfplattor som är något mittemellan dataskärmar och mobilskärmar.</p>
-                <p>Navigationsmenyn: tog bort float så att menyn hamnar ovanför content. Annars hade den tagit upp plats och gjort columnen för huvudinnehållet smalare. Gjorde meny alternativen så långa som möjligt så att de är lättare att trycka på i en
-                    liten mobil.
-                </p>
-                <p>Kunde inte få backgrundsbilden att fungera så jag bytte ut den mot en backgrundsfärg. Eftersom blocket för huvudinnehållet tar upp nästan all skärmplats så blev bilden ändå överflödig.</p>
-                <p>Loggans storlek var satt i px så jag ändrade till procent så att hela loggan fick plats. Innan detta minskades inte bilden när skärmen blev mindre så loggan tog plats utanför containern vilket påverkade viewporten negativt.
-                </p>
-                <p>Bildernas position och storlek fick jag ändra, dessa var satta i px och fick ändra dem till procent. Nu när de är i procent så ändras deras storlek beroende på skärmstorleken.</p>
-                <p>I huvudlayouten har jag marginaler för att trycka ihop textstyckerna så att de inte blir för breda vilket då ger de jobbigare att läsa. med en liten skärm finns inte det problemet utan tvärtom så behöver man maximera utrymmet för texten.
-                    Så jag minskade marginalerna och satte dem i procent så att de ändras dynamiskt.</p>
-                <p>Det jag gjorde först med tabellen var att göra den skrollbar. Problemmet med tabellen är att om den är för liten så kan man inte läsa innehållet och då måste läsaren zooma in för att kunna läsa. Jag minskade ändå storleken på texten i
-                    tabellen och när jag kolla på min mobil så kan jag läsa innehållet så jag tror det fungerar iaf.</p>
-                <p>I kontaktformuläret så har jag lagt till lite saker, till exempel attributet "required" som gör att det inte går att skicka iväg innehållet utan att först ha skrivit klart formuläret. Har även gett det en ny layout och ändrat marginaler.
-                    Att fylla i ett formulär på mobilen är jobbigt eftersom tangentbordet på mobiler oftast är litet vilket gör det jobbigt att skriva. på så sätt borde man använda så lite textrutor som möjligt och byta ut dessa till checkboxar eller
-                    radioknappar. Specifierade även vad som skulle skrivas i de olika textboxarna så när man ska fylla i ett telefonnummer så kommer mobilen autumatiskt ta upp knappsatsen för siffror.</p>
-                <p>Jag lade till CSS sprites i menyn i den här laborationen. Dessa skapade problem när jag skulle fixa layouten för menyn i mobilversionen. Jag hade använt padding för att få spritsen precis bredvid texten men den paddingen påverkade storleken
-                    på menyn i mobilläget så att menyn gick utanför headern vilket skpade problem för view-porten. Jag tog därför bort paddingen och centrerade istället texten så att spriten inte skulle ligga på texten utan att behöva använda padding.
-                    Ska fundera på en lösning för detta. Jag ska även öka avståndet mellan bilderna i min sprite för jag har märkt att om det är för litet så kan två bilder på samma sprite synas när t.ex. menystorleken ändras.
-                </p>
-                <p>Skapade en favicon och en apple-touch-icon så att jag nu har en icon i tabben på hemsidan och en icon när man vill lägga min hemsida som ett bokmärke i mobilens "skrivbord". Läste på om dessa ikoner och lärde mig att man behöver olika
-                    storlekar på dessa ikoner för olika mobiler, surfplattor och browsers har olika skärmupplösning. Så på vissa enheter kan en liten storlek på ikonen fungera men på andra blir den pixlad eller suddig. Man behöver på så sätt många ikoner
-                    med olika storlekar om man vill att det ska se bra ut i alla olika enheter. Jag skapade en rad olika storlekar men kände att det räckte med några få för min lilla hemsida.</p>
-                <p>Detta var väl det huvudsakliga jag gjorde för att förbättra sidans tillgänglighet för mobilläsare. Det viktigaste för mobilversioner skulle jag vilja säga är att använda procent som storlek indikator och att maximera utrymmet för text-innehållet
-                    så att det är lätt att läsa.</p>
-                <P>Skrivet av Josefine Rutgerson 17-09-2015</p>
-            </div>
+            <p>Inna jag beskriver vad jag har gjort så vill jag nämna att jag har utformat innehållet för främst Iphone fyra. Det funkar bra i andra mobilskärmar men kanske inte lika perfekt. Det är svårt att ha storlekar och procentsatser för att det ska
+                vara perfekt i alla olika skärmar så jag är ändå nöjd med resultatet. Det jag skulle kunna göra är att göra en till CSS layout för just surfplattor som är något mittemellan dataskärmar och mobilskärmar.</p>
+            <p>Navigationsmenyn: tog bort float så att menyn hamnar ovanför content. Annars hade den tagit upp plats och gjort columnen för huvudinnehållet smalare. Gjorde meny alternativen så långa som möjligt så att de är lättare att trycka på i en liten
+                mobil.
+            </p>
+            <p>Kunde inte få backgrundsbilden att fungera så jag bytte ut den mot en backgrundsfärg. Eftersom blocket för huvudinnehållet tar upp nästan all skärmplats så blev bilden ändå överflödig.</p>
+            <p>Loggans storlek var satt i px så jag ändrade till procent så att hela loggan fick plats. Innan detta minskades inte bilden när skärmen blev mindre så loggan tog plats utanför containern vilket påverkade viewporten negativt.
+            </p>
+            <p>Bildernas position och storlek fick jag ändra, dessa var satta i px och fick ändra dem till procent. Nu när de är i procent så ändras deras storlek beroende på skärmstorleken.</p>
+            <p>I huvudlayouten har jag marginaler för att trycka ihop textstyckerna så att de inte blir för breda vilket då ger de jobbigare att läsa. med en liten skärm finns inte det problemet utan tvärtom så behöver man maximera utrymmet för texten. Så
+                jag minskade marginalerna och satte dem i procent så att de ändras dynamiskt.</p>
+            <p>Det jag gjorde först med tabellen var att göra den skrollbar. Problemmet med tabellen är att om den är för liten så kan man inte läsa innehållet och då måste läsaren zooma in för att kunna läsa. Jag minskade ändå storleken på texten i tabellen
+                och när jag kolla på min mobil så kan jag läsa innehållet så jag tror det fungerar iaf.</p>
+            <p>I kontaktformuläret så har jag lagt till lite saker, till exempel attributet "required" som gör att det inte går att skicka iväg innehållet utan att först ha skrivit klart formuläret. Har även gett det en ny layout och ändrat marginaler. Att
+                fylla i ett formulär på mobilen är jobbigt eftersom tangentbordet på mobiler oftast är litet vilket gör det jobbigt att skriva. på så sätt borde man använda så lite textrutor som möjligt och byta ut dessa till checkboxar eller radioknappar.
+                Specifierade även vad som skulle skrivas i de olika textboxarna så när man ska fylla i ett telefonnummer så kommer mobilen autumatiskt ta upp knappsatsen för siffror.</p>
+            <p>Jag lade till CSS sprites i menyn i den här laborationen. Dessa skapade problem när jag skulle fixa layouten för menyn i mobilversionen. Jag hade använt padding för att få spritsen precis bredvid texten men den paddingen påverkade storleken
+                på menyn i mobilläget så att menyn gick utanför headern vilket skpade problem för view-porten. Jag tog därför bort paddingen och centrerade istället texten så att spriten inte skulle ligga på texten utan att behöva använda padding. Ska
+                fundera på en lösning för detta. Jag ska även öka avståndet mellan bilderna i min sprite för jag har märkt att om det är för litet så kan två bilder på samma sprite synas när t.ex. menystorleken ändras.
+            </p>
+            <p>Skapade en favicon och en apple-touch-icon så att jag nu har en icon i tabben på hemsidan och en icon när man vill lägga min hemsida som ett bokmärke i mobilens "skrivbord". Läste på om dessa ikoner och lärde mig att man behöver olika storlekar
+                på dessa ikoner för olika mobiler, surfplattor och browsers har olika skärmupplösning. Så på vissa enheter kan en liten storlek på ikonen fungera men på andra blir den pixlad eller suddig. Man behöver på så sätt många ikoner med olika
+                storlekar om man vill att det ska se bra ut i alla olika enheter. Jag skapade en rad olika storlekar men kände att det räckte med några få för min lilla hemsida.</p>
+            <p>Detta var väl det huvudsakliga jag gjorde för att förbättra sidans tillgänglighet för mobilläsare. Det viktigaste för mobilversioner skulle jag vilja säga är att använda procent som storlek indikator och att maximera utrymmet för text-innehållet
+                så att det är lätt att läsa.</p>
+            <P>Skrivet av Josefine Rutgerson 17-09-2015</p>
         </div>
-        <div id="footer">
-            Copyright Josefine Rutgerson 2015
-        </div>
+    </div>
+    <div id="footer">
+        Copyright Josefine Rutgerson 2015
+    </div>
     </div>
     <script src="Scripts/jquery-2.1.4.js"></script>
     <script src="Scripts/custom.js"></script>

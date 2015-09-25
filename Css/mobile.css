@@ -71,6 +71,12 @@ div.blog-post {
     width:80%;  
 }
 
+#sailboat {
+    width:15%;
+    position: relative;
+    margin: 0% 0% 0% 0%;
+}
+
 
 /* Layout headings */
 

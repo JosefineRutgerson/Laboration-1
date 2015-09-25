@@ -63,17 +63,18 @@ table {
 
 #header {
     width:100%;
-    background-image:url(Pics/sail.png);
-    background-size:10%;
-    background:no-repeat;
-    
 }
 
 .logo {
     width:35%;
     padding-top:2%;
-    padding-bottom:3%;
-    
+    padding-bottom:1%;
+}
+
+#sailboat {
+    width:4.5%;
+    position: relative;
+    margin: 0% 0% 0% 0%;
 }
 
 #content {
