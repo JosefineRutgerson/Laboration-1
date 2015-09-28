@@ -3,19 +3,33 @@ $(document).ready(function() {
     setInterval(
         function() {
             $('#sailboat').animate({
-                'margin-left': '80%'
-            }, 5000);
+                'margin-left': '82%'
+            }, 60000);
             $('#sailboat').animate({
                 'margin-left': '0%'
-            }, 5000);
+            }, 50000);
         },2000);
 
 });
 
 
+/* Labb 4 */
 
 
+console.log("Hello world");
+window.alert("Hello world");
+
+alert("rad 1" + "\n" + "rad 2");
 
 
+var tal1 = 2;
+var tal2 = 4;
+var tal3 = 6;
+var tal4 = 8;
 
-console.log("Hej Josse! from Monstret");
+
+var medelTal = function (tal1, tal2, tal3, tal4) {
+    
+    
+}; 
+

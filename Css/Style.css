@@ -87,6 +87,14 @@ table {
     border: 1px solid black;
     background-color:rgba(235, 232, 255, 0.9);
 }
+
+.bColor {
+    background-color:rgba(165, 199, 255, 0.2); /* #bcd3f3*/
+    margin: 7% 7%;
+    padding: 1% 0.5%;
+    border: 1px solid navy;
+}
+
 #footer {
     width: 70%;
     background-color:rgba(235, 232, 255, 0.9);
@@ -354,12 +362,12 @@ a:active {color:purple;} /*the link styles must be in this order or the link set
  
  div.blog-post {
      
-     border:2px double gray;
+     border:1px solid navy;
      margin:45px 45px 45px 45px;
      padding:20px 20px 20px 20px;
-     background:url(/Css/Pics/iconblogg.png) top right/ 8% no-repeat;
-     background-color:rgba(188, 211, 243, 0.8);
-}
+     background-color:rgba(188, 211, 243, 0.4);
+ }
+     
      
      
  div.blog-post h4 {
@@ -368,6 +376,16 @@ a:active {color:purple;} /*the link styles must be in this order or the link set
      font-weight:bold;
      margin-top:10px;
     
+ }
+ 
+ .iconblog {
+     background:url(/Css/Pics/iconblogg.png);
+     width:4.5%;
+     position: relative;
+     margin: 0% 0% 0% 0%;
+     padding:0% 1%;
+     
+
  }
 
 .blog-spot p {
