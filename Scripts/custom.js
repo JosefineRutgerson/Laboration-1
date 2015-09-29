@@ -88,6 +88,32 @@ function Game() {
 
 /* Uppgift 4*/
 
+/* Fahrenheit*/
+
+var TempF; 
+var resultC;
+
+function Fahrenheit () {
+    TempF = +prompt("Convert Fahrenheit to Celsius");
+    resultC = (TempF -  32)  *  5/9;
+    alert(TempF + " degrees fahrenheit equals " + resultC +" degrees celsius.");
+}
+
+/* Celsius */
+
+var TempC; 
+var resultF;
+
+function Celsius(){
+    TempC = +prompt("Convert Celsius to Fahrenheit");
+    resultF = TempC * 9/5 + 32;
+    alert(TempC + " degrees celsius equals " + resultF + " degrees fahrenheit");
+}
+
+
+
+/* Menyn*/
+
 var menu;
 var loopMenu = true;
 
@@ -98,13 +124,12 @@ function meny() {
         switch (menu) {
             case 0:
                 loopMenu = false;
-
                 break;
             case 1:
-
+                Fahrenheit();
                 break;
             case 2:
-
+                Celsius();
                 break;
             case 3:
                 Game();
