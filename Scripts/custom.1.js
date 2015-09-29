@@ -36,7 +36,6 @@ var medelTal = function(x, y, z, v) {
 
 };
 
-
 var medel = calcMedeltal(medelTal);
 
 console.log(medel); /* Function medeltal uppg: 2.1 */
@@ -49,6 +48,7 @@ var printArg = function(a, b, c) {
 console.log(printArg("Josse", "is", "awesome"));
 
 /* Uppgift 3*/
+
 
 
 var Loop = true;
@@ -73,46 +73,14 @@ function Game() {
         else if (gissaTalet < computerChoice) {
             gissaTalet = +prompt("Sorry, your number " + gissaTalet + " is to low hehehe, try again shall we?");
         }
-        else {
+        else{
             alert("Your input was not a number");
-            Loop = false;
+            Loop=false;
         }
-        console.log("Talet som ska gissas är =" + computerChoice);
-        count = count + 1;
+        console.log("Talet som ska gissas är ="+computerChoice);
+        count = count  + 1;
         console.log(count);
     }
 }
 
-//Game();
-
-
-/* Uppgift 4*/
-
-var menu;
-var loopMenu = true;
-
-function meny() {
-    
-    while (loopMenu) {
-        menu = +prompt("0. Exit" + "\n" + "1. Fahrenheit to Celsius" + "\n" + "2. Celsius to Farhenheit" + "\n" + "3. Guess number");
-        switch (menu) {
-            case 0:
-                loopMenu = false;
-
-                break;
-            case 1:
-
-                break;
-            case 2:
-
-                break;
-            case 3:
-                Game();
-                break;
-            default:
-               
-        }
-    }
-}
-
-meny();
+Game();
