@@ -185,3 +185,44 @@ function triangle(){
 }
 
 triangle();
+
+
+/* Uppgift 7 Tentamarodören */
+console.log("Uppgift 7 Tentamarodören");
+
+    
+var arrayT = [10,2,89,9,65,13,3];
+
+function tentamen(arrayT){
+    var sum = arrayT.reduce(function(a,b) { return a+b;});
+    var resultatM = Math.round(sum/arrayT.length);
+    console.log("Resultat"+resultatM)
+   // var max = Math.max(...arrayT);
+    //var i = 0;
+    //var max = arrayT.filter(Math.max);
+    //for(var maximum = 0; maximum < arrayT.length; maximum ++)
+    arrayT = arrayT.sort(function(a,z) { return a-z;});
+    var max = arrayT[arrayT.length-1];
+    var min = arrayT[0];
+    var arraySvar = [resultatM, max, min];
+    console.log(arraySvar);
+    
+}
+
+tentamen(arrayT);
+
+
+
+
+/* Uppgift 8 Födelsedag */
+
+
+var date = new Date();
+
+
+function birthday (){
+    var month = (date.getMonth() -1)
+    var day = +prompt("On what day are your birthday (1-31)?")
+}
+
+birthday();
