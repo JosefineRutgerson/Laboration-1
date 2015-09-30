@@ -92,10 +92,10 @@ function Game() {
 
 
 
-function Fahrenheit (f) {
-    
-   var resultC = (f -  32)  *  5/9;
-    alert(f + " degrees fahrenheit equals " + resultC +" degrees celsius.");
+function Fahrenheit(f) {
+
+    var resultC = (f - 32) * 5 / 9;
+    alert(f + " degrees fahrenheit equals " + resultC + " degrees celsius.");
 }
 
 /* Celsius */
@@ -103,9 +103,9 @@ function Fahrenheit (f) {
 
 
 
-function Celsius(c){
-   
-    var resultF = c * 9/5 + 32;
+function Celsius(c) {
+
+    var resultF = c * 9 / 5 + 32;
     alert(c + " degrees celsius equals " + resultF + " degrees fahrenheit");
 }
 
@@ -117,7 +117,7 @@ var menu;
 var loopMenu = true;
 
 function meny() {
-    
+
     while (loopMenu) {
         menu = +prompt("0. Exit" + "\n" + "1. Fahrenheit to Celsius" + "\n" + "2. Celsius to Farhenheit" + "\n" + "3. Guess number");
         switch (menu) {
@@ -136,9 +136,35 @@ function meny() {
                 Game();
                 break;
             default:
-               
+
         }
     }
 }
 
 meny();
+
+/* Uppgift 5 Strings*/
+
+
+
+function convertString(s) {
+    var convert = "";
+    for (var i = 0; i < s.length; i++) {
+        if (s[i].toUpperCase() === "A") {
+            convert += "#";
+        }
+        else if (s[i] === s[i].toUpperCase()) {
+            convert += s[i].toLowerCase()
+        }
+        else if (s[i] === s[i].toLowerCase()) {
+            convert += s[i].toUpperCase()
+        }
+    
+    
+    }
+    console.log("input texten är " +s);
+    console.log("output texten är " + convert);
+}
+
+
+convertString("jag adoRE JoSSe");
