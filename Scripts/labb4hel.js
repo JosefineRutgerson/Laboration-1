@@ -1,16 +1,3 @@
-$(document).ready(function() {
-
-    setInterval(
-        function() {
-            $('#sailboat').animate({
-                'margin-left': '82%'
-            }, 60000);
-            $('#sailboat').animate({
-                'margin-left': '0%'
-            }, 50000);
-        }, 2000);
-
-});
 
 
 /* Labb 4 */
@@ -239,7 +226,7 @@ function birthday (){
         milliLeft = timeB - timeT;
     }
     var daysLeft = Math.floor(milliLeft /(1000*60*60*24));
-    console.log("how many days left to your birtday " +daysLeft);
+    console.log("how many days left to your birtday " + daysLeft);
     if (daysLeft === 0){
         alert("Congratulations on your birthday!");
     }
