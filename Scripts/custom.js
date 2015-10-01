@@ -196,11 +196,7 @@ var arrayT = [10,2,89,9,65,13,3];
 function tentamen(arrayT){
     var sum = arrayT.reduce(function(a,b) { return a+b;});
     var resultatM = Math.round(sum/arrayT.length);
-    console.log("Resultat"+resultatM)
-   // var max = Math.max(...arrayT);
-    //var i = 0;
-    //var max = arrayT.filter(Math.max);
-    //for(var maximum = 0; maximum < arrayT.length; maximum ++)
+    
     arrayT = arrayT.sort(function(a,z) { return a-z;});
     var max = arrayT[arrayT.length-1];
     var min = arrayT[0];
@@ -217,12 +213,36 @@ tentamen(arrayT);
 /* Uppgift 8 Födelsedag */
 
 
-var date = new Date();
+
 
 
 function birthday (){
-    var month = (date.getMonth() -1)
+    var month =  +prompt("On what month are your birthday (1-12)?")
     var day = +prompt("On what day are your birthday (1-31)?")
+    
+    month = month - 1;
+    var birthdate = new Date();
+    birthdate.setMonth(month);
+    birthdate.setDate(day);
+    var timeB = birthdate.getTime();
+    
+    var todaysDate = new Date();
+    var timeT = todaysDate.getTime();
+    var milliLeft = timeB - timeT;
+    if (milliLeft < 0){
+        var birthdayAddedOneYEar = birthdate.getFullYear()+1;
+        birthdate.setYear(birthdayAddedOneYEar);
+        timeB = birthdate.getTime();
+        milliLeft = timeB - timeT;
+    }
+    var daysLeft = Math.floor(milliLeft /(1000*60*60*24));
+    console.log(daysLeft);
+    if (daysLeft === 0){
+        alert("Congratulations on your birthday!");
+    }
+    alert("You have " + daysLeft + " days left to your birthday!");
+    
 }
 
 birthday();
+
