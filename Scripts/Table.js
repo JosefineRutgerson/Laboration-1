@@ -1,32 +1,7 @@
-// In this example, the document contents are 
-// overwritten as the document 
-// is reinitialized on open(). 
+/* Uppgift 9 Tabell */
 
 
-var strang = "";
-strang += "<table border='1'>";
-strang += "<tr>";
-strang += "<th>";
-strang += "Förnamn";
-strang += "</th>";
-strang += "<th>";
-strang += "Efternamn";
-strang += "</th>";
-strang += "<th>";
-strang += "Telefon";
-strang += "</th>";
-strang += "<tr>";
-strang += "<td>";
-strang += "Haris";
-strang += "</td>";
-strang += "<td>";
-strang += "Klajic";
-strang += "</td>";
-strang += "<td>";
-strang += "888990";
-strang += "</tr>";
-strang += "</table>";
-
+/* En funktion som generar en tabell från en två-dimonsioell array */
 var tableSht = [
     ["Förnamn", "Efternamn", "Telefon"],
     ["Haris", "Kljaijc", 76589],

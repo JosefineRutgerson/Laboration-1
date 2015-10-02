@@ -1,55 +1,12 @@
-$(document).ready(function() {
-
-    setInterval(
-        function() {
-            $('#sailboat').animate({
-                'margin-left': '82%'
-            }, 60000);
-            $('#sailboat').animate({
-                'margin-left': '0%'
-            }, 50000);
-        }, 2000);
-
-});
 
 
-/* Labb 4 */
 
+/* Uppgift 4*/
 
-/* console.log("Hello world");
-window.alert("Hello world");
-
-alert("rad 1" + "\n" + "rad 2"); */
-
-/* Uppgift 2*/
-
-function calcMedeltal(m) {
-    var tal1 = 2;
-    var tal2 = 4;
-    var tal3 = 6;
-    var tal4 = 8;
-    return m(tal1, tal2, tal3, tal4);
-}
-
-var medelTal = function(x, y, z, v) {
-    return ((x + y + z + v) / 4);
-
-};
-
-var medel = calcMedeltal(medelTal);
-
-console.log(medel); /* Function medeltal uppg: 2.1 */
-
-/* Uppgift 2.1*/
-
-var printArg = function(a, b, c) {
-    return a + "," + b + "," + c;
-};
-console.log(printArg("Josse", "is", "awesome"));
 
 /* Uppgift 3*/
 
-
+/* En funktion där datorn slumpar fram ett tal och där användaren ska försöka gissa talet.*/
 
 var Loop = true;
 var count = 1; /*räknar hur många gånger användaren gissar*/
@@ -73,14 +30,73 @@ function Game() {
         else if (gissaTalet < computerChoice) {
             gissaTalet = +prompt("Sorry, your number " + gissaTalet + " is to low hehehe, try again shall we?");
         }
-        else{
+        else {
             alert("Your input was not a number");
-            Loop=false;
+            Loop = false;
         }
-        console.log("Talet som ska gissas är ="+computerChoice);
-        count = count  + 1;
+        console.log("Talet som ska gissas är =" + computerChoice);
+        count = count + 1;
         console.log(count);
     }
 }
 
-Game();
+
+
+
+/* Fahrenheit*/
+
+
+
+function Fahrenheit(f) {
+
+    var resultC = (f - 32) * 5 / 9;
+    alert(f + " degrees fahrenheit equals " + resultC + " degrees celsius.");
+}
+
+/* Celsius */
+
+
+
+
+function Celsius(c) {
+
+    var resultF = c * 9 / 5 + 32;
+    alert(c + " degrees celsius equals " + resultF + " degrees fahrenheit");
+}
+
+
+
+/* Menyn*/
+
+var menu;
+var loopMenu = true;
+
+function meny() {
+
+    while (loopMenu) {
+        menu = +prompt("0. Exit" + "\n" + "1. Fahrenheit to Celsius" + "\n" + "2. Celsius to Farhenheit" + "\n" + "3. Guess number");
+        switch (menu) {
+            case 0:
+                loopMenu = false;
+                break;
+            case 1:
+                var tempF = +prompt("Convert Fahrenheit to Celsius");
+                Fahrenheit(tempF);
+                break;
+            case 2:
+                var tempC = +prompt("Convert Celsius to Fahrenheit");
+                Celsius(tempC);
+                break;
+            case 3:
+                Game();
+                break;
+            default:
+
+        }
+    }
+}
+
+meny();
+
+
+

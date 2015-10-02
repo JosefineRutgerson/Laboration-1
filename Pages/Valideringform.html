@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Form - validation</title>
+    <link rel="stylesheet" type="text/css" href="../Css/Validering.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header></header>
+        <div id="content">
+            
+            <form id="form_validation" action="" method="POST">
+                <fieldset>
+                    
+                <div class="form_validation">
+                    <legend><h2>Fill in your payment information</h2></legend>
+                    <p id="firstN">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" placeholder="Firstname" id="firstname" name="firstname" class="firstname" value="" />
+                    </p>
+                    <p>
+                        <label for="lastname">Lastname</label>
+                        <input type="text" placeholder="Lastname" id="lastname" name="lastname" value="" />
+                    </p>
+                    <p>
+                        <label for="zipcode">Zip code</label>
+                        <input type="text" placeholder="Zip code" id="zipcode" name="zipcode" value="" />
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="janedoe@example.com" id="email" name="email" value="" />
+                    </p>
+                    <p>
+                        <label for="pricemodel">Pricing model</label>
+                        <select name="pricemodel" id="pricemodel">
+                            <option value="low">Low</option>
+                            <option value="avarage">Avarage</option>
+                            <option value="high">High</option>
+                        </select>
+                    </p>
+                    </fieldset>
+                    <div class="contact_form">
+                        <button id="button" type="submit">Commit</button>
+                    </div>
+            </form>
+            </div>
+
+
+
+        </div>
+        <footer></footer>
+    </div>
+    <script src="../Scripts/jquery-2.1.4.js"></script>
+    <script src="../Scripts/Validation.js"></script>
+</body>
+
+</html>
