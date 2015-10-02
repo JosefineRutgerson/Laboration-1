@@ -84,11 +84,40 @@ table {
     width:10%;
  }
  
- .form_validation {
+ #form_validation {
      width:60%;
      
  }
  
  .firstname {
      outline-color:green;
+ }
+ 
+ #firstnameinfo {
+     font-size:1em;
+     font-style:italic;
+     
+ }
+ 
+ #lastnameinfo {
+     font-size:1em;
+     font-style:italic;
+ }
+ 
+ #zipcodeinfo {
+     font-size:1em;
+     font-style:italic;
+ }
+ 
+ #emailinfo {
+     font-size:1em;
+     font-style:italic;
+ }
+ 
+ #form_validation textarea.error {
+     border-color:red;
+ }
+ 
+ .error {
+     border-color:red;
  }

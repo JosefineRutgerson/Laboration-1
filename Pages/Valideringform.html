@@ -18,21 +18,25 @@
                     
                 <div class="form_validation">
                     <legend><h2>Fill in your payment information</h2></legend>
-                    <p id="firstN">
+                    <p>
                         <label for="firstname">Firstname</label>
-                        <input type="text" placeholder="Firstname" id="firstname" name="firstname" class="firstname" value="" />
+                        <input id="firstname" type="text" placeholder="Firstname" name="firstname" class="firstname" value="" />
+                        <span id="firstnameinfo" class="error">Write your firstname.</span>
                     </p>
                     <p>
                         <label for="lastname">Lastname</label>
                         <input type="text" placeholder="Lastname" id="lastname" name="lastname" value="" />
+                         <span id="lastnameinfo" class="error">Write your lastname.</span>
                     </p>
                     <p>
                         <label for="zipcode">Zip code</label>
                         <input type="text" placeholder="Zip code" id="zipcode" name="zipcode" value="" />
+                         <span id="zipcodeinfo">Write your zip code.</span>
                     </p>
                     <p>
                         <label for="email">Email</label>
                         <input type="email" placeholder="janedoe@example.com" id="email" name="email" value="" />
+                         <span id="emailinfo">Write your e-mail.</span>
                     </p>
                     <p>
                         <label for="pricemodel">Pricing model</label>
