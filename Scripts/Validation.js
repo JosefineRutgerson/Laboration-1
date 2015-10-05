@@ -9,7 +9,15 @@ $(document).ready(function() {
    var eMail = $("#email");
    var emailInfo = $("emailinfo");
    
-   
+      $('input').change(function() {
+		if(this.id == 'firstname' || this.id == 'lastname') {
+			this.style.borderColor = this.value.match(/.+/) ? '#00FF00' : '#FF0000';
+		} else if(this.id == 'zipcode') {
+			this.style.borderColor = this.value.match(/^[0-9]{5}$/) ? '#00FF00' : '#FF0000';
+		} else if(this.id == 'email') {
+			this.style.borderColor = this.value.match(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/) ? '#00FF00' : '#FF0000';
+		}
+	});
    
 
         

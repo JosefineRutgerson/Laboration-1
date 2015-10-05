@@ -12,7 +12,7 @@ function triangle(){
     var bU = Math.pow(b,2);
     var cU = aU + bU;
     var c = Math.round(Math.sqrt(cU));
-    console.log(c);
+    console.log("Längden på hypotenusan är " +c + "cm.");
 }
 
 triangle();
