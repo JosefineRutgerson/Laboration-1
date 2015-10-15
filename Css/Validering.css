@@ -1,4 +1,4 @@
-/* Mendokse */
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -49,75 +49,249 @@ table {
 }
  
  /* custom CSS --> */
- body {
-     font-size: 14px;
- }
  
- #container {
-     width:1200px;
-     margin:auto;
-     background-color:#a4dff7;
- }
  
- #content {
-     width:90%;
-     margin:auto;
-     background-color:#c0e3f1;
- }
+
+
+main,
+header,
+nav,
+footer,
+#content,
+#mainPos,
+#teacherContainer,
+#vehicleContainer {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    float: left;
+}
+
+main {
+    width: 75em;
+    
+}
+
+
+
+#content {
+    min-width: 55%;
+    width: 75%;
+    max-width: 75%;
+    float:left;
+}
+
+p {
+    font-family: "calibri", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: "calibri", sans-serif;
+}
+
+#firstSection {
+    margin:4% 5%;
+}
+
+#firstSection h1 {
+    font-family: "calibri";
+    font-size:1.7em;
+    font-weight:bold;
+    margin:2% 2%;
+}
+/*
+    Viewing window for items in slidshow
+    Width is how many items can fit in the slideshow.
+    Negative margin is how many is visible(at this moment 2(100% = 2 * 50%)
+    Depending on parent view container ofc
+*/
+#mainPos{
+    max-width:100%;
+    min-width:100%;
+    width:100%;
+    overflow:hidden;
+    margin-bottom:5%;
+}
+
+#itemContainer {
+    width:60%;
+}
+
+#firstSection p {
+    font-family: "calibri";
+    font-size:1em;
+    line-height:1.2em;
+    margin:2% 2%;
+    
+}
+
+#itemContainer h3 {
+ font-size:1.3em;
+ margin-left:2%;
+ padding:2% 0;
+}
  
- p {
-     font-size:1.1em;
-     margin:2.5%;
- }
- 
- h2 {
-     font-size:1.5em;
-     margin:2%;
-     font-weight:bold;
- }
- 
- #button {
-     display:inline-block;
-    background:#f9a411;
-    border-radius:7px;
-    padding:0.5% 0.5%;
-    width:10%;
- }
- 
- #form_validation {
-     width:60%;
-     
- }
- 
- .firstname {
-     outline-color:green;
- }
- 
- #firstnameinfo {
-     font-size:1em;
-     font-style:italic;
-     
- }
- 
- #lastnameinfo {
-     font-size:1em;
-     font-style:italic;
- }
- 
- #zipcodeinfo {
-     font-size:1em;
-     font-style:italic;
- }
- 
- #emailinfo {
-     font-size:1em;
-     font-style:italic;
- }
- 
- #form_validation textarea.error {
-     border-color:red;
- }
- 
- .error {
-     border-color:red;
- }
+/* Contact form layout/behaviour */
+
+#contact_form {
+    width:100%;
+    margin-top:2%;
+    
+}
+
+#contact_form label{
+	display: inline-block;
+	width: 100px; 
+	text-align: left;
+	font-family:sans-serif;
+	
+}
+
+#submit_button {
+    padding:0.3em 1em;
+    font-family: "calibri";
+    font-size:1em;
+}
+
+#contact_submit{
+    
+	
+}
+
+
+textarea{
+	vertical-align: top;
+	height: 5em;
+}
+
+
+
+.error{
+    display:block;
+	margin-left: 10px;
+}		
+
+.error_show{
+	margin-left: 10px;
+}
+
+form div {
+    
+    font-size:1.1em;
+    margin:0em 1em 1.5em 1em;
+}
+
+form p {
+    font-size:0.8em;
+    font-style:italic;
+    height:0.8em;
+    min-height:0.8em;
+    margin-top:0.3em;
+}
+
+
+contact_submit p {
+    font-size:0.8em;
+    font-style:italic;
+    margin-top:0.3em;
+}
+
+
+#popupMessage {
+    display: none;
+    position: fixed;
+    width: 30%;
+    height: 40%;
+    left: 25%;
+    top: 15%;
+}
+
+
+
+#popupMessage div {
+    float: left;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 16%;
+}
+
+#popupMessage h4 {
+    margin: 2%;
+    font-size:1.3em;
+}
+
+#popupMessage h6 {
+    font-size:1em;
+    margin: 1%;
+    padding: 1%;
+    max-width: 50%;
+    float: left;
+    font-style: normal;
+}
+
+#popupMessage p {
+    font-size:1em;
+    margin: 1%;
+    padding: 1%;
+    max-width: 50%;
+    float: left;
+}
+
+#cancel {
+    font-family: "calibri";
+    padding: 2%;
+    margin: 1% 1% 1% 3%;
+}
+
+#confirm {
+    font-family: "calibri";
+    padding: 2%;
+    margin: 1% 1% 1% 3%;
+}
+
+
+/* Form coloring */
+
+/* Form input coloring */
+.error_show{
+	color: red;
+}
+.invalid{
+	outline-color:red;
+	border:1px solid red;
+	
+}
+
+.valid{
+	outline-color: #00ff00;
+	border:1px solid #00ff00;
+}
+
+#submit_button {
+    background-color:#67C2EE;
+}
+
+#popupMessage {
+    background-color:#C1E9FD;
+}
+#popupMessage div{
+
+    
+}
+#popupMessage div p{
+
+}
+
+#cancel {
+    background-color:#67C2EE;
+}
+
+#confirm {
+    background-color:#67C2EE;
+}
+
+#itemContainer {
+    background-color:#C1E9FD;
+}

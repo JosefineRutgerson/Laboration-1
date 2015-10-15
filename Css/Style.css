@@ -1,4 +1,4 @@
-/* Mendokse */
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -491,7 +491,9 @@ td p em {
     font-style:italic;
     margin-right:15px;
 }
-    
+
+
+/* Form layout*/    
     
     #contact-form {
     margin:2%;
@@ -499,6 +501,13 @@ td p em {
     
     .contact_form label {
     float:left;
+}
+
+.contact_form button {
+    
+    background-color:#FF7057;
+    border-radius:2%;
+    padding:2%;
 }
 
 

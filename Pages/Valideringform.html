@@ -1,65 +1,94 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 
 <head>
     <meta charset="utf-8" />
-    <title>Form - validation</title>
     <link rel="stylesheet" type="text/css" href="../Css/Validering.css" />
+    <title>Kontakt</title>
 </head>
 
 <body>
-    <div id="container">
-        <header></header>
+    <main>
+        <header>
+
+        </header>
+        <nav></nav>
+
         <div id="content">
-            
-            <form id="form_validation" action="" method="POST">
-                <fieldset>
-                    
-                <div class="form_validation">
-                    <legend><h2>Fill in your payment information</h2></legend>
-                    <p>
-                        <label for="firstname">Firstname</label>
-                        <input id="firstname" type="text" placeholder="Firstname" name="firstname" class="firstname" value="" />
-                        <span id="firstnameinfo" class="error">Write your firstname.</span>
-                    </p>
-                    <p>
-                        <label for="lastname">Lastname</label>
-                        <input type="text" placeholder="Lastname" id="lastname" name="lastname" value="" />
-                         <span id="lastnameinfo" class="error">Write your lastname.</span>
-                    </p>
-                    <p>
-                        <label for="zipcode">Zip code</label>
-                        <input type="text" placeholder="Zip code" id="zipcode" name="zipcode" value="" />
-                         <span id="zipcodeinfo">Write your zip code.</span>
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="janedoe@example.com" id="email" name="email" value="" />
-                         <span id="emailinfo">Write your e-mail.</span>
-                    </p>
-                    <p>
-                        <label for="pricemodel">Pricing model</label>
-                        <select name="pricemodel" id="pricemodel">
-                            <option value="low">Low</option>
-                            <option value="avarage">Avarage</option>
-                            <option value="high">High</option>
-                        </select>
-                    </p>
-                    </fieldset>
-                    <div class="contact_form">
-                        <button id="button" type="submit">Commit</button>
+            <!-- wraps around all main content-->
+            <section id="firstSection">
+                <!-- section here -->
+                <h1>Kontakta oss</h1>
+                <div id="mainPos">
+                    <div id="itemContainer">
+                        <h3>Kontaktformulär</h3>
+                        <form id="contact_form" method="post" action="#">
+                            <!-- Name -->
+                            <div>
+                                <label for="contact_name">Namn:</label>
+                                <input type="text" id="contact_name" name="name" placeholder="Namn">
+                                <p></p>
+                            </div>
+                            <!-- Email -->
+                            <div>
+                                <label for="contact_email">Email:</label>
+                                <input type="email" id="contact_email" name="email" placeholder="Email" autocomplete="off">
+                                <p></p>
+                            </div>
+                            <!--Website -->
+                            <div>
+                                <label for="contact_tel">Telefon:</label>
+                                <input type="text" id="contact_tel" name="tel" placeholder="Telefonnummer">
+                                <p></p>
+                            </div>
+                            <!-- Message -->
+                            <div>
+                                <label for="contact_message">Meddelande:</label>
+                                <textarea id="contact_message" name="message" placeholder="Fråga oss!"></textarea>
+                                <p></p>
+                            </div>
+                            <!-- Submit Button -->
+                            <div id="contact_submit">
+                                <button type="submit" id="submit_button">Skicka</button>
+                                <p></p>
+                            </div>
+                        </form>
                     </div>
-            </form>
-            </div>
-
-
-
+                </div>
+            </section>
         </div>
-        <footer></footer>
+        <footer>
+        </footer>
+    </main>
+    <div id="popupMessage">
+        <div>
+            <h4>Vänligen bekräfta din information</h4>
+        </div>
+        <div>
+            <h6>Namn:</h6>
+            <p id="nameValue"></p>
+        </div>
+        <div>
+            <h6>Email:</h6>
+            <p id="emailValue"></p>
+        </div>
+        <div>
+            <h6>Telefon:</h6>
+            <p id="telValue"></p>
+        </div>
+        <div>
+            <h6>Meddelande:</h6>
+            <p id="messageValue"></p>
+        </div>
+        <div>
+            <button id="cancel">Avbryt</button>
+            <button id="confirm">Skicka</button>
+        </div>
     </div>
-    <script src="../Scripts/jquery-2.1.4.js"></script>
-    <script src="../Scripts/Validation.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../Scripts/Validation.js"></script>
 </body>
+
 
 </html>
