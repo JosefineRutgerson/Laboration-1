@@ -1,0 +1,53 @@
+.sailboat {
+    width:4.5%;
+    position: relative;
+    margin: 0% 0% 0% 0%;
+}
+
+#flipSail {
+    width:50px;
+    height:50px;
+    
+}
+
+.sails {
+    width:100%;
+}
+
+#flipSail > #frontSail {
+    position:absolute;
+    -webkit-transform:perspective(600px) rotateY(0deg);
+    transform:perspective(600px) rotateY(0deg);
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition:-webkit-transform .5s linear 0s;
+    transition:transform .5s linear 0s;
+    background:url(Pics/sail.png) no-repeat; width:4%;
+}
+
+#flipSail > #backSail {
+    position:absolute;
+    -webkit-transform:perspective(600px) rotateY(180deg);
+    transform:perspective(600px) rotateY(180deg);
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition:-webkit-transform .5s linear 0s;
+    transition:transform .5s linear 0s;
+    background:url(Pics/sail.png) no-repeat; width:4%;
+}
+
+#flipSail:hover > #frontSail {
+    -webkit-transform:perspective(600px) rotateY(-180deg);
+    transform:perspective(600px) rotateY(-180deg);
+}
+
+#flipSail:hover > #backSail {
+    -webkit-transform:perspective(600px) rotateY(0deg);
+    transform:perspective(600px) rotateY(0deg);
+}
+
+
+
+
+
+

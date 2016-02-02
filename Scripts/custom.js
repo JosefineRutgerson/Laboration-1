@@ -1,16 +1,4 @@
-$(document).ready(function() {
 
-    setInterval(
-        function() {
-            $('#sailboat').animate({
-                'margin-left': '82%'
-            }, 60000);
-            $('#sailboat').animate({
-                'margin-left': '0%'
-            }, 50000);
-        }, 2000);
-
-});
 
 
 /* Labb 4 */
