@@ -137,7 +137,7 @@ nav ul li {   /* One of my problems with the menu was that I first didn't get wh
 
 nav ul li a {
     display:inline-block;
-    background:#bcd3f3;
+    background:rgba(165, 199, 255, 0.7);
     border-radius:7px;
     padding:4% 1% 4% 1%;
     border:2px outset gray;
@@ -154,7 +154,7 @@ a:hover  { /* The hover attribute makes something happen when the mouse pointer 
 
 .active { /* This is like the passive element but is effects the "active" element in the menu*/
     display: inline-block;
-    background:#6dbfdd;
+    background:rgba(235, 232, 255, 0.8);
     border-radius:7px;
 
     
@@ -300,7 +300,7 @@ h1 {
     font-size:3em;
     font-weight:bold;
     margin: 45px 45px 60px 45px;
-    color:#1b1464;
+    color:#352d89;
     }
 h2 {
     font-family:"bookman old style","georgia";
@@ -308,7 +308,7 @@ h2 {
     font-weight:none;
     margin-top:25px;
     margin-bottom:25px;
-    color:#1b1464;
+    color:#352d89;
 }
 h3 {font-family:"bookman old style","georgia";
     font-size:1.5em;
@@ -341,7 +341,7 @@ p {
 
 a {text-decoration: none;} 
 a:link { color:#f26c4f;}
-a:visited { color:#f26c4f;}
+a:visited { color:navy;}
 a:focus {color:navy;}
 a:hover {color:#6df6de; }
 a:active {color:purple;} /*the link styles must be in this order or the link settings will override eachother and they won't work */
