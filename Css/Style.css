@@ -340,7 +340,7 @@ p {
 /* Link layout */
 
 a {text-decoration: none;} 
-a:link { color:green;}
+a:link { color:#f26c4f;}
 a:visited { color:#f26c4f;}
 a:focus {color:navy;}
 a:hover {color:#6df6de; }
